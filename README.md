@@ -1,4 +1,4 @@
-# your-library-name
+# parvus-ui
 
 A description..
 
@@ -27,5 +27,3 @@ Lint `src` and `test` files:
 ```
 $ npm run lint
 ```
-
-For CommonJS exports to use with node, you can use this babel plugin: [babel-plugin-transform-es2015-modules-simple-commonjs](https://www.npmjs.com/package/babel-plugin-transform-es2015-modules-simple-commonjs)
