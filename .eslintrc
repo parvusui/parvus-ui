@@ -9,6 +9,7 @@
     "react/jsx-sort-prop-types": 0
   },
   "plugins": [
-    "react"
+    "react",
+    "flowtype"
   ]
 }

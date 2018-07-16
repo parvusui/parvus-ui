@@ -1,0 +1,12 @@
+[ignore]
+.*/node_modules/.*
+[include]
+src
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='modules' -> '<PROJECT_ROOT>/node_modules'
+module.name_mapper='theme' -> '<PROJECT_ROOT>/src/theme'
+[strict]
