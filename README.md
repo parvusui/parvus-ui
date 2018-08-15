@@ -1,6 +1,6 @@
 # parvus-ui
 
-A very small UI component library for React apps. It includes theming, probably all the generic components you need, and it also includes layout components using the very popular and powerful flexbox (we've also tried to keep things as consistent with popular technologies as possible to try and make it as easy as possible to figure out and to find docs for).
+A very small UI component library for React and Preact apps. It includes theming and probably all the generic components you need to build fantastic user interfaces!
 
 ## Usage
 

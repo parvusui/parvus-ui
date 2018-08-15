@@ -7,15 +7,16 @@ const div = document.createElement('div');
 document.body.appendChild(div);
 
 const theme = {
+  fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
   backgroundColor: '#fefefe',
-  neutralColor: 'gray',
-  color: '#333',
-  primaryColor: 'yellow',
-  secondaryColor: 'gray',
-  tertiaryColor: 'white',
-  successColor: 'green',
-  errorColor: 'red',
-  warningColor: 'orange'
+  fontColor: '#000',
+  neutralColor: '#f9f9f9',
+  primaryColor: '#007bff',
+  secondaryColor: '#6c757d',
+  tertiaryColor: '#fff',
+  successColor: '#3cb371',
+  errorColor: '#ff0000',
+  warningColor: '#ffa500'
 };
 
 const Example = () => (

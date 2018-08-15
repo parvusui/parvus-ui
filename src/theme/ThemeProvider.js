@@ -1,13 +1,12 @@
 /* @flow */
-import * as React from 'react';
-import { ThemeContext } from './ThemeContext';
+import * as React from "react";
+import { ThemeContext } from "./ThemeContext";
 
 type Props = {
   children: React.Node,
   theme: {
     backgroundColor?: string,
-    neutralColor?: string,
-    color?: string,
+    borderRadius?: number,
     primaryColor?: string,
     secondaryColor?: string,
     tertiaryColor?: string,
@@ -21,15 +20,14 @@ const ThemeProvider = (props: Props) => {
   const { children, theme } = props;
 
   const _theme = {
-    backgroundColor: theme.backgroundColor || '#fff',
-    neutralColor: theme.neutral || 'gray',
-    color: theme.textColor || '#222',
-    primaryColor: theme.primaryColor || 'blue',
-    secondaryColor: theme.secondaryColor || 'gray',
-    tertiaryColor: theme.tertiary || 'white',
-    successColor: theme.successColor || 'green',
-    errorColor: theme.errorColor || 'red',
-    warningColor: theme.warningColor || 'orange'
+    backgroundColor: theme.backgroundColor || "#fff",
+    borderRadius: theme.borderRadius || 0,
+    primaryColor: theme.primaryColor || "blue",
+    secondaryColor: theme.secondaryColor || "gray",
+    tertiaryColor: theme.tertiaryColor || "white",
+    successColor: theme.successColor || "green",
+    errorColor: theme.errorColor || "red",
+    warningColor: theme.warningColor || "orange"
   };
 
   return (

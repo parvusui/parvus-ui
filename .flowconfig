@@ -9,4 +9,5 @@ src
 [options]
 module.name_mapper='modules' -> '<PROJECT_ROOT>/node_modules'
 module.name_mapper='theme' -> '<PROJECT_ROOT>/src/theme'
+module.name_mapper='utils' -> '<PROJECT_ROOT>/src/utils'
 [strict]

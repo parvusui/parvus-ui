@@ -14,13 +14,14 @@ type Props = {
   otherProps?: Object
 };
 
-const Button = (props: Props) => {
+const Alert = (props: Props) => {
   const { className, children, styles, theme, type, ...otherProps } = props;
 
   const _styles = cxs({
     backgroundColor: theme ? theme[type + "Color"] : "#fff",
+    color: theme ? theme[type + "Color"] : "#fff",
+    border: "1px solid transparent",
     borderRadius: theme ? theme.borderRadius : 0,
-    border: 0,
     color: theme
       ? isDarkColor(theme[type + "Color"])
         ? "#fff"
@@ -29,29 +30,20 @@ const Button = (props: Props) => {
     padding: ".375rem .75rem",
     fontSize: "1rem",
     fontWeight: 400,
-    minWidth: "6rem",
+    width: "100%",
     textAlign: "center",
-    ":hover": {
-      opacity: 0.7
-    },
-    ":disabled": {
-      opacity: 0.3
-    },
-    ":focus": {
-      boxShadow: "0 0 0 0.2rem rgba(108,117,125,.5)"
-    },
     ...styles
   });
 
   return (
-    <button className={classnames(_styles, className)} {...otherProps}>
+    <div className={classnames(_styles, className)} {...otherProps}>
       {children}
-    </button>
+    </div>
   );
 };
 
-Button.defaultProps = {
+Alert.defaultProps = {
   type: "primary"
 };
 
-export default withTheme(Button);
+export default withTheme(Alert);
