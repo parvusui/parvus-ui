@@ -18,7 +18,7 @@ const CardFooter = (props: Props) => {
   const _styles = cxs({
     width: "100%",
     backgroundColor: theme ? theme.neutralColor : "#fefefe",
-    borderTop: "1px solid #cddc39",
+    borderTop: "0.75px solid #dcdcdc",
     ...styles
   });
 

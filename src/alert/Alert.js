@@ -27,11 +27,12 @@ const Alert = (props: Props) => {
         ? "#fff"
         : "#000"
       : "#fff",
-    padding: ".375rem .75rem",
+    padding: ".75rem 1.25rem;",
     fontSize: "1rem",
     fontWeight: 400,
+    lineHeight: '1.5',
     width: "100%",
-    textAlign: "center",
+    textAlign: "left",
     ...styles
   });
 

@@ -9,7 +9,6 @@ type Props = {
   className?: string,
   styles?: Object,
   theme?: Object,
-  value: string,
   checked: boolean,
   onChange: Function,
   otherProps?: Object
@@ -20,7 +19,6 @@ const Radio = (props: Props) => {
     className,
     styles,
     theme,
-    value,
     checked,
     onChange,
     otherProps
@@ -37,7 +35,6 @@ const Radio = (props: Props) => {
       className={classnames(_styles, className)}
       type="radio"
       onChange={onChange}
-      value={value}
       checked={checked}
       {...otherProps}
     />

@@ -11,5 +11,8 @@
   "plugins": [
     "react",
     "flowtype"
-  ]
+  ],
+  "globals": {
+    "document": true
+  }
 }

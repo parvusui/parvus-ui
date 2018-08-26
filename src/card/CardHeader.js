@@ -18,7 +18,7 @@ const CardHeader = (props: Props) => {
   const _styles = cxs({
     width: "100%",
     backgroundColor: theme ? theme.neutralColor : "#fefefe",
-    borderBottom: "1px solid #cddc39",
+    borderBottom: "0.75px solid #dcdcdc",
     ...styles
   });
 
