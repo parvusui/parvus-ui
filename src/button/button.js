@@ -18,7 +18,7 @@ const Button = (props: Props) => {
   const { className, children, styles, theme, type, ...otherProps } = props;
 
   const _styles = cxs({
-    backgroundColor: theme ? theme[type + "Color"] : "#ffffff",
+    backgroundColor: theme ? theme[type + "Color"] : "#000000",
     borderRadius: theme ? theme.borderRadius : 0,
     border: 0,
     color: theme

@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import ThemeContext from './ThemeContext';
+import ThemeContext from './themeContext';
 
 const withTheme = (Component: Function) => {
   return (props: Object) => {

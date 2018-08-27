@@ -18,7 +18,7 @@ const Alert = (props: Props) => {
   const { className, children, styles, theme, type, ...otherProps } = props;
 
   const _styles = cxs({
-    backgroundColor: theme ? theme[type + "Color"] : "#ffffff",
+    backgroundColor: theme ? theme[type + "Color"] : "#ff0000",
     border: "1px solid transparent",
     borderRadius: theme ? theme.borderRadius : 0,
     color: theme

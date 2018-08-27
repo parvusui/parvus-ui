@@ -15,9 +15,20 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /\.(node_modules|examples)$/,
+        exclude: /node_modules/,
         use: ["babel-loader", "eslint-loader"]
-      }
+      },
+      {
+				test: /\.css$/,
+				loader: 'style-loader!css-loader?importLoaders=1',
+			},
+			{
+				test: /\.svg$/,
+				loader: 'file-loader',
+				query: {
+					name: 'static/media/[name].[hash:8].[ext]',
+				},
+			},
     ]
   },
   plugins: [new HtmlWebpackPlugin()],

@@ -1,3 +1,8 @@
 {
-  "presets": ["env", "react", "stage-2", "flow"]
+  "presets": ["env", "react", "stage-2", "flow"],
+  "env": {
+    "development": {
+      "plugins": [["flow-react-proptypes", { "ignoreNodeModules": true }]]
+    }
+  }
 }

@@ -31,7 +31,9 @@
     "build": "babel src -d lib && BABEL_ENV=es babel src -d es",
     "precommit": "exit 0",
     "postinstall": "flow-typed install && flow-typed create-stub cxs@x && flow-typed create-stub create-react-context@x",
-    "prepublish": "rm -rf lib && rm -rf es && npm run build"
+    "prepublish": "rm -rf lib && rm -rf es && npm run build",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "lint-staged": {
     "*.{js,jsx,json}": [
@@ -55,6 +57,7 @@
     "babel-jest": "22.4.4",
     "babel-loader": "7.1.5",
     "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-flow-react-proptypes": "^24.1.1",
     "babel-preset-env": "1.7.0",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react": "6.24.1",
@@ -77,8 +80,10 @@
     "prettier": "1.12.1",
     "prettier-eslint": "8.8.1",
     "prettier-eslint-cli": "4.7.1",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-styleguidist": "^7.3.0",
     "webpack": "^4.16.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"

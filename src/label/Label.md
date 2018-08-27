@@ -1,0 +1,7 @@
+Label:
+
+```
+  <Label>
+    Hello
+  </Label>
+```

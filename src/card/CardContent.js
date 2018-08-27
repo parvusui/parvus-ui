@@ -16,7 +16,7 @@ const CardContent = (props: Props) => {
   const { children, className, styles, theme, otherProps } = props;
 
   const _styles = cxs({
-    backgroundColor: theme ? theme.neutralColor : "#eeeeee",
+    backgroundColor: theme ? theme.neutralColor : "#f9f9f9",
     padding: '1.25rem',
     ...styles
   });

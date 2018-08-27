@@ -65,8 +65,6 @@ const TestComponent = props => {
         onChange={() => {}}
       />
 
-      <h1>Drawer</h1>
-
       <h1>Input</h1>
       <Input
         value="Hello"
@@ -92,9 +90,7 @@ const TestComponent = props => {
       />
 
       <h1>Select</h1>
-      <Select
-        onChange={() => {}}
-      >
+      <Select>
         <Option id="test1" value="test1">Test 1</Option>
         <Option id="test1" value="test2">Test 2</Option>
       </Select>

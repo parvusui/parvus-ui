@@ -1,6 +1,6 @@
 /* @flow */
 import React, { type Node } from 'react';
-import ThemeContext from "./ThemeContext";
+import ThemeContext from "./themeContext";
 
 type Props = {
   children: Node,
