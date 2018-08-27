@@ -14,7 +14,7 @@ const Option = (props: Props) => {
   const { children, className, styles, otherProps } = props;
 
   const _styles = cxs({
-    fontSize: '1rem',
+    fontSize: '1.25rem',
     ...styles
   });
 

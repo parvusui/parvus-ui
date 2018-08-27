@@ -5,7 +5,7 @@ Checkbox:
     checked
     onChange={() => {}}
   />
-    <Checkbox
+  <Checkbox
     checked={false}
     onChange={() => {}}
   />

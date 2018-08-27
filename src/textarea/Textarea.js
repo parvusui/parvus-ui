@@ -18,7 +18,10 @@ const Textarea = (props: Props) => {
 
   const _styles = cxs({
     borderRadius: theme ? theme.borderRadius : 0,
-    fontSize: '1rem',
+    fontFamily: theme
+      ? theme.fontFamily
+      : "Helvetica Neue, Helvetica, Arial, sans-serif",
+    fontSize: '1.25rem',
     ...styles
   });
 

@@ -18,7 +18,7 @@ const Select = (props: Props) => {
   const { children, className, styles, theme, outerClassName, outerStyles, otherProps } = props;
 
   const _outerStyles = cxs({
-    border: "1px solid #eeeeee",
+    border: "1px solid #dcdcdc",
     borderRadius: theme ? theme.borderRadius : 0,
     display: 'inline-block',
     padding: '.25rem',
@@ -29,7 +29,10 @@ const Select = (props: Props) => {
   const _styles = cxs({
     backgroundColor: theme ? theme.backgroundColor : "#ffffff",
     border: 0,
-    fontSize: '1rem',
+    fontFamily: theme
+      ? theme.fontFamily
+      : "Helvetica Neue, Helvetica, Arial, sans-serif",
+    fontSize: '1.25rem',
     ...styles
   });
 

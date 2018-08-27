@@ -35,7 +35,7 @@ const Background = (props: Props) => {
       ? theme.fontFamily
       : "Helvetica Neue, Helvetica, Arial, sans-serif",
     color: theme ? theme.color : "#000000",
-    fontSize: '1rem',
+    fontSize: '1.25rem',
     ...styles
   });
 

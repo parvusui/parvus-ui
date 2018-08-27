@@ -17,7 +17,7 @@ const A = (props: Props) => {
     backgroundColor: "transparent",
     color: "#007bff",
     cursor: 'pointer',
-    fontSize: "1rem",
+    fontSize: '1.25rem',
     fontWeight: 400,
     textDecoration: "none",
     ":hover": {

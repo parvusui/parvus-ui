@@ -27,7 +27,6 @@ class TestComponent extends Component {
     checkboxChecked: true,
     inputText: 'Hello',
     modalOpen: false,
-    radioChecked: true,
     textareaText: 'Hello'
   }
 
@@ -36,7 +35,6 @@ class TestComponent extends Component {
       checkboxChecked,
       inputText,
       modalOpen,
-      radioChecked,
       textareaText
     } = this.state;
 
@@ -80,14 +78,14 @@ class TestComponent extends Component {
 
         <h1>Checkbox</h1>
         <Checkbox
-          checked={true}
-          onChange={() => { }}
+          checked={checkboxChecked}
+          onChange={() => this.setState({ checkboxChecked: !checkboxChecked })}
         />
 
         <h1>Input</h1>
         <Input
-          value="Hello"
-          onChange={() => { }}
+          value={inputText}
+          onChange={(event) => { this.setState({ inputText: event.target.value })}}
         />
 
         <h1>Label</h1>
@@ -126,6 +124,10 @@ class TestComponent extends Component {
           checked={true}
           onChange={() => { }}
         />
+        <Radio
+          checked={false}
+          onChange={() => { }}
+        />
 
         <h1>Select</h1>
         <Select>
@@ -135,8 +137,8 @@ class TestComponent extends Component {
 
         <h1>Textarea</h1>
         <Textarea
-          value="Hello"
-          onChange={() => { }}
+          value={textareaText}
+          onChange={(event) => { this.setState({ textareaText: event.target.value })}}
         />
 
         <h1>Tooltip</h1>
