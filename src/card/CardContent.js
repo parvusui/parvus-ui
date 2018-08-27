@@ -1,11 +1,11 @@
 /* @flow */
-import * as React from "react";
+import React, { type Node } from 'react';
 import { withTheme } from "theme";
 import cxs from "cxs";
 import classnames from "classnames";
 
 type Props = {
-  children: string | React.Node,
+  children: string | Node,
   className?: string,
   styles?: Object,
   theme?: Object,
@@ -16,8 +16,8 @@ const CardContent = (props: Props) => {
   const { children, className, styles, theme, otherProps } = props;
 
   const _styles = cxs({
-    width: "100%",
-    backgroundColor: theme ? theme.neutralColor : "#fefefe",
+    backgroundColor: theme ? theme.neutralColor : "#eeeeee",
+    padding: '1.25rem',
     ...styles
   });
 

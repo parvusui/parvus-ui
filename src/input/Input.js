@@ -1,25 +1,25 @@
 /* @flow */
-import * as React from "react";
+import React from 'react';
 import { withTheme } from "theme";
 import cxs from "cxs";
 import classnames from "classnames";
 
 type Props = {
-  children: string | React.Node,
   className?: string,
   styles?: Object,
   theme?: Object,
+  type?: string,
   value: string,
   onChange: Function,
   otherProps?: Object
 };
 
 const Input = (props: Props) => {
-  const { className, styles, theme, value, onChange, otherProps } = props;
+  const { className, styles, type, theme, value, onChange, otherProps } = props;
 
   const _styles = cxs({
-    width: "5rem",
-    height: "1.5rem",
+    borderRadius: theme ? theme.borderRadius : 0,
+    fontSize: '1rem',
     ...styles
   });
 
@@ -28,9 +28,14 @@ const Input = (props: Props) => {
       className={classnames(_styles, className)}
       onChange={onChange}
       value={value}
+      type={type}
       {...otherProps}
     />
   );
+};
+
+Input.defaultProps = {
+  type: "text"
 };
 
 export default withTheme(Input);

@@ -1,21 +1,20 @@
 /* @flow */
-import * as React from "react";
-import { withTheme } from "theme";
+import React, { type Node } from 'react';
 import cxs from "cxs";
 import classnames from "classnames";
 
 type Props = {
-  children: string | React.Node,
+  children: string | Node,
   className?: string,
   styles?: Object,
-  theme?: Object,
   otherProps?: Object
 };
 
 const Option = (props: Props) => {
-  const { children, className, styles, theme, otherProps } = props;
+  const { children, className, styles, otherProps } = props;
 
   const _styles = cxs({
+    fontSize: '1rem',
     ...styles
   });
 
@@ -26,4 +25,4 @@ const Option = (props: Props) => {
   );
 };
 
-export default withTheme(Option);
+export default Option;

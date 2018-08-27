@@ -1,5 +1,6 @@
 
 import React from 'react';
+import cxs from "cxs";
 import {
   withTheme,
   A,
@@ -21,7 +22,7 @@ import {
 
 const TestComponent = props => {
   return (
-    <Background styles={{display: 'flex'}}>
+    <Background>
       <h1>Anchor tag</h1>
       <A>Link</A>
 
@@ -36,15 +37,17 @@ const TestComponent = props => {
       <h1>Breadcrumbs</h1>
 
       <h1>Button</h1>
-      <Button type="primary">Primary</Button>
-      <Button type="secondary">Secondary</Button>
-      <Button type="tertiary">Tertiary</Button>
-      <Button type="success">Success</Button>
-      <Button type="error">Error</Button>
-      <Button type="warning">Warning</Button>
+      <div className={cxs({ display: 'flex', justifyContent: 'flex-start' })}>
+        <Button type="primary">Primary</Button>
+        <Button type="secondary">Secondary</Button>
+        <Button type="tertiary">Tertiary</Button>
+        <Button type="success">Success</Button>
+        <Button type="error">Error</Button>
+        <Button type="warning">Warning</Button>
+      </div>
 
       <h1>Card</h1>
-      <Card styles={{width: '100px'}}>
+      <Card styles={{width: '400px'}}>
         <CardHeader>
           Header
         </CardHeader>
@@ -71,9 +74,14 @@ const TestComponent = props => {
       />
 
       <h1>Label</h1>
-      <Label>
-        Hello
+      <Label htmlFor="testLabel">
+        <b>Hello </b>
       </Label>
+      <Input
+        id="testLabel"
+        value="Hello"
+        onChange={() => {}}
+      />
 
       <h1>Menu</h1>
 
@@ -87,8 +95,8 @@ const TestComponent = props => {
       <Select
         onChange={() => {}}
       >
-        <Option id="test1" value="test1"/>
-        <Option id="test1" value="test2"/>
+        <Option id="test1" value="test1">Test 1</Option>
+        <Option id="test1" value="test2">Test 2</Option>
       </Select>
 
       <h1>Textarea</h1>

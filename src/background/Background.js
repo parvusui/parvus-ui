@@ -1,11 +1,11 @@
 /* @flow */
-import * as React from "react";
+import React, { type Node } from 'react';
 import { withTheme } from "theme";
 import cxs from "cxs";
 import classnames from "classnames";
 
 type Props = {
-  children: string | React.Node,
+  children: string | Node,
   className?: string,
   bgStyles?: Object,
   styles?: Object,
@@ -24,7 +24,7 @@ const Background = (props: Props) => {
     height: "100%",
     margin: "0",
     padding: "0",
-    backgroundColor: theme ? theme.backgroundColor : "#fff",
+    backgroundColor: theme ? theme.backgroundColor : "#ffffff",
     zIndex: "-1",
     ...bgStyles
   });
@@ -33,17 +33,17 @@ const Background = (props: Props) => {
     fontFamily: theme
       ? theme.fontFamily
       : "Helvetica Neue, Helvetica, Arial, sans-serif",
-    color: theme ? theme.color : "#fff",
-    display: "relative",
-    height: "100%",
-    width: "100%",
+    color: theme ? theme.color : "#000000",
+    fontSize: '1rem',
     ...styles
   });
 
   return (
     <div>
-      <div className={classnames(_bgStyles, className)} />
-      <div {...otherProps}>{children}</div>
+      <div className={classnames(_bgStyles, bgStyles)} />
+      <div className={classnames(_styles, className)} {...otherProps}>
+        {children}
+      </div>
     </div>
   );
 };

@@ -1,3 +1,4 @@
-import React from 'react';
+/* @flow */
+import createReactContext from 'create-react-context';
 
-export const ThemeContext = React.createContext();
+export default createReactContext();

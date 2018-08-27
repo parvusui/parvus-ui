@@ -1,11 +1,11 @@
 /* @flow */
-import * as React from "react";
+import React, { type Node } from 'react';
 import { withTheme } from "theme";
 import cxs from "cxs";
 import classnames from "classnames";
 
 type Props = {
-  children: string | React.Node,
+  children: string | Node,
   className?: string,
   styles?: Object,
   htmlFor?: string,
@@ -16,6 +16,7 @@ const Label = (props: Props) => {
   const { children, className, htmlFor, styles, otherProps } = props;
 
   const _styles = cxs({
+    fontSize: '1rem',
     ...styles
   });
 

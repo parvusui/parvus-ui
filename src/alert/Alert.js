@@ -1,12 +1,12 @@
 /* @flow */
-import * as React from "react";
+import React, { type Node } from 'react';
 import { withTheme } from "theme";
 import cxs from "cxs";
 import classnames from "classnames";
 import { isDarkColor } from "utils/helpers";
 
 type Props = {
-  children: string | React.Node,
+  children: string | Node,
   className?: string,
   styles?: Object,
   theme?: Object,
@@ -18,21 +18,23 @@ const Alert = (props: Props) => {
   const { className, children, styles, theme, type, ...otherProps } = props;
 
   const _styles = cxs({
-    backgroundColor: theme ? theme[type + "Color"] : "#fff",
-    color: theme ? theme[type + "Color"] : "#fff",
+    backgroundColor: theme ? theme[type + "Color"] : "#ffffff",
     border: "1px solid transparent",
     borderRadius: theme ? theme.borderRadius : 0,
     color: theme
       ? isDarkColor(theme[type + "Color"])
-        ? "#fff"
-        : "#000"
-      : "#fff",
-    padding: ".75rem 1.25rem;",
+        ? "#ffffff"
+        : "#000000"
+      : "#ffffff",
+    fontFamily: theme
+      ? theme.fontFamily
+      : "Helvetica Neue, Helvetica, Arial, sans-serif",
     fontSize: "1rem",
     fontWeight: 400,
     lineHeight: '1.5',
-    width: "100%",
+    padding: ".75rem 1.25rem;",
     textAlign: "left",
+    width: "100%",
     ...styles
   });
 

@@ -1,12 +1,12 @@
 /* @flow */
-import * as React from "react";
+import React, { type Node } from 'react';
 import { withTheme } from "theme";
 import cxs from "cxs";
 import classnames from "classnames";
 import { isDarkColor } from "utils/helpers";
 
 type Props = {
-  children: string | React.Node,
+  children: string | Node,
   className?: string,
   styles?: Object,
   theme?: Object,
@@ -18,27 +18,27 @@ const Button = (props: Props) => {
   const { className, children, styles, theme, type, ...otherProps } = props;
 
   const _styles = cxs({
-    backgroundColor: theme ? theme[type + "Color"] : "#fff",
+    backgroundColor: theme ? theme[type + "Color"] : "#ffffff",
     borderRadius: theme ? theme.borderRadius : 0,
     border: 0,
     color: theme
       ? isDarkColor(theme[type + "Color"])
-        ? "#fff"
-        : "#000"
-      : "#fff",
-    padding: ".375rem .75rem",
+        ? "#ffffff"
+        : "#000000"
+      : "#ffffff",
     fontSize: "1rem",
     fontWeight: 400,
     minWidth: "6rem",
+    padding: ".375rem .75rem",
     textAlign: "center",
-    ":hover": {
-      opacity: 0.7
-    },
     ":disabled": {
       opacity: 0.3
     },
     ":focus": {
-      boxShadow: "0 0 0 0.2rem rgba(108,117,125,.5)"
+      opacity: 0.7
+    },
+    ":hover": {
+      opacity: 0.7
     },
     ...styles
   });

@@ -1,18 +1,17 @@
 /* @flow */
-import * as React from "react";
+import React, { type Node } from 'react';
 import cxs from "cxs";
 import classnames from "classnames";
 
 type Props = {
-  children: string | React.Node,
+  children: string | Node,
   className?: string,
   styles?: Object,
-  type: string,
   otherProps?: Object
 };
 
 const A = (props: Props) => {
-  const { className, children, styles, type, ...otherProps } = props;
+  const { className, children, styles, ...otherProps } = props;
 
   const _styles = cxs({
     backgroundColor: "transparent",

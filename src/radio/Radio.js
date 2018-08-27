@@ -1,14 +1,11 @@
 /* @flow */
-import * as React from "react";
-import { withTheme } from "theme";
+import React from 'react';
 import cxs from "cxs";
 import classnames from "classnames";
 
 type Props = {
-  children: string | React.Node,
   className?: string,
   styles?: Object,
-  theme?: Object,
   checked: boolean,
   onChange: Function,
   otherProps?: Object
@@ -18,15 +15,14 @@ const Radio = (props: Props) => {
   const {
     className,
     styles,
-    theme,
     checked,
     onChange,
     otherProps
   } = props;
 
   const _styles = cxs({
-    width: ".25rem",
-    height: ".25rem",
+    width: ".8rem",
+    height: ".8rem",
     ...styles
   });
 
@@ -41,4 +37,4 @@ const Radio = (props: Props) => {
   );
 };
 
-export default withTheme(Radio);
+export default Radio;

@@ -1,11 +1,10 @@
 /* @flow */
-import * as React from "react";
+import React from 'react';
 import { withTheme } from "theme";
 import cxs from "cxs";
 import classnames from "classnames";
 
 type Props = {
-  children: string | React.Node,
   className?: string,
   styles?: Object,
   theme?: Object,
@@ -18,8 +17,8 @@ const Textarea = (props: Props) => {
   const { className, styles, theme, value, onChange, otherProps } = props;
 
   const _styles = cxs({
-    width: "5rem",
-    height: "1.5rem",
+    borderRadius: theme ? theme.borderRadius : 0,
+    fontSize: '1rem',
     ...styles
   });
 

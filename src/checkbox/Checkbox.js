@@ -1,32 +1,32 @@
 /* @flow */
-import * as React from "react";
+import React from 'react';
 import { withTheme } from "theme";
 import cxs from "cxs";
 import classnames from "classnames";
 
 type Props = {
-  children: string | React.Node,
+  checked: boolean,
   className?: string,
   styles?: Object,
   theme?: Object,
-  checked: boolean,
   onChange: Function,
   otherProps?: Object
 };
 
 const Checkbox = (props: Props) => {
   const {
+    checked,
     className,
     styles,
     theme,
-    checked,
     onChange,
     otherProps
   } = props;
 
   const _styles = cxs({
-    width: ".25rem",
-    height: ".25rem",
+    borderRadius: theme ? theme.borderRadius : 0,
+    width: ".8rem",
+    height: ".8rem",
     ...styles
   });
 
