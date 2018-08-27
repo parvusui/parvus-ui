@@ -16,6 +16,7 @@ const A = (props: Props) => {
   const _styles = cxs({
     backgroundColor: "transparent",
     color: "#007bff",
+    cursor: 'pointer',
     fontSize: "1rem",
     fontWeight: 400,
     textDecoration: "none",

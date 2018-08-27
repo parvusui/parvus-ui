@@ -12,6 +12,7 @@ import { Card, CardHeader, CardContent, CardFooter } from "./card";
 import { Checkbox } from "./checkbox";
 import { Input } from "./input";
 import { Label } from "./label";
+import { Modal, ModalOverlay } from "./modal";
 import { Radio } from "./radio";
 import { Select, Option } from "./select";
 import { Textarea } from "./textarea";
@@ -32,6 +33,8 @@ export {
   Checkbox,
   Input,
   Label,
+  Modal,
+  ModalOverlay,
   Radio,
   Select,
   Textarea,
@@ -54,6 +57,8 @@ export default {
   Checkbox,
   Input,
   Label,
+  Modal,
+  ModalOverlay,
   Radio,
   Select,
   Textarea,

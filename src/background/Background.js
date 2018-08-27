@@ -6,6 +6,7 @@ import classnames from "classnames";
 
 type Props = {
   children: string | Node,
+  bgClassName?: string,
   className?: string,
   bgStyles?: Object,
   styles?: Object,
@@ -14,7 +15,7 @@ type Props = {
 };
 
 const Background = (props: Props) => {
-  const { className, children, bgStyles, styles, theme, otherProps } = props;
+  const { bgClassName, className, children, bgStyles, styles, theme, otherProps } = props;
 
   const _bgStyles = cxs({
     position: "absolute",
@@ -40,7 +41,7 @@ const Background = (props: Props) => {
 
   return (
     <div>
-      <div className={classnames(_bgStyles, bgStyles)} />
+      <div className={classnames(_bgStyles, bgClassName)} />
       <div className={classnames(_styles, className)} {...otherProps}>
         {children}
       </div>

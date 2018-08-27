@@ -3,4 +3,5 @@ node_modules
 lib
 es
 flow-typed
+styleguide
 .vscode/
