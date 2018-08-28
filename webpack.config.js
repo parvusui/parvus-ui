@@ -9,7 +9,7 @@ module.exports = {
     filename: "index.js"
   },
   resolve: {
-    modules: [path.resolve(__dirname, "src"), "node_modules"]
+    modules: ["node_modules"]
   },
   module: {
     rules: [

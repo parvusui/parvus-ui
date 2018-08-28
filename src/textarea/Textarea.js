@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { withTheme } from "theme";
+import { withTheme } from "../theme";
 import cxs from "cxs";
 import classnames from "classnames";
 

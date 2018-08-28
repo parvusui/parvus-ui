@@ -1,9 +1,9 @@
 /* @flow */
 import React, { type Node } from 'react';
-import { withTheme } from 'theme';
+import { withTheme } from '../theme';
 import cxs from 'cxs';
 import classnames from 'classnames';
-import { isDarkColor } from 'utils/helpers';
+import { isDarkColor } from '../utils/helpers';
 
 type Props = {
   children: string | Node,

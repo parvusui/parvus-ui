@@ -1,13 +1,13 @@
 /* @flow */
 import React from 'react';
-import ThemeContext from './themeContext';
+import themeContext from './themeContext';
 
 const withTheme = (Component: Function) => {
   return (props: Object) => {
     return (
-      <ThemeContext.Consumer>
+      <themeContext.Consumer>
         {theme => <Component {...props} theme={theme} />}
-      </ThemeContext.Consumer>
+      </themeContext.Consumer>
     );
   };
 };

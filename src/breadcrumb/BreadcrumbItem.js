@@ -2,8 +2,8 @@
 import React, { type Node } from 'react';
 import cxs from "cxs";
 import classnames from "classnames";
-import { withTheme } from "theme";
-import { isDarkColor } from 'utils/helpers';
+import { withTheme } from '../theme';
+import { isDarkColor } from '../utils/helpers';
 
 type Props = {
   children: string | Node,

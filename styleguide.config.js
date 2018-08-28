@@ -1,4 +1,4 @@
 module.exports = {
-	title: 'Parvus-ui Examples',
+	title: 'Parvus-UI Examples',
 	components: 'src/**/[A-Z]*.js'
 };

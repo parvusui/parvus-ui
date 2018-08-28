@@ -1,5 +1,5 @@
 import {
-  ThemeContext,
+  themeContext,
   ThemeProvider,
   withPassedTheme,
   withTheme
@@ -20,7 +20,7 @@ import { Textarea } from "./textarea";
 import { Tooltip } from "./tooltip";
 
 export {
-  ThemeContext,
+  themeContext,
   ThemeProvider,
   withPassedTheme,
   withTheme,
@@ -47,7 +47,7 @@ export {
 };
 
 export default {
-  ThemeContext,
+  themeContext,
   ThemeProvider,
   withPassedTheme,
   withTheme,

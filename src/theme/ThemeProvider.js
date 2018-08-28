@@ -1,6 +1,6 @@
 /* @flow */
 import React, { type Node } from 'react';
-import ThemeContext from "./themeContext";
+import themeContext from "./themeContext";
 
 type Props = {
   children: Node,
@@ -35,9 +35,9 @@ const ThemeProvider = (props: Props) => {
   };
 
   return (
-    <ThemeContext.Provider value={_theme}>
+    <themeContext.Provider value={_theme}>
       {children}
-    </ThemeContext.Provider>
+    </themeContext.Provider>
   );
 };
 
