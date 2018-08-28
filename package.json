@@ -29,7 +29,7 @@
     "flow": "flow",
     "start": "webpack-dev-server --mode development",
     "test": "jest",
-    "build": "babel src -d lib && BABEL_ENV=es babel src -d es",
+    "build": "rm -rf lib && ./node_modules/.bin/webpack --mode=production && BABEL_ENV=es babel src -d es",
     "precommit": "exit 0",
     "postinstall": "flow-typed install && flow-typed create-stub cxs@x && flow-typed create-stub create-react-context@x",
     "prepublish": "rm -rf lib && rm -rf es && npm run build",
