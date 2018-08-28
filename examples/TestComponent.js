@@ -6,6 +6,8 @@ import {
   A,
   Alert,
   Background,
+  Breadcrumb,
+  BreadcrumbItem,
   Button,
   Card,
   CardHeader,
@@ -19,7 +21,8 @@ import {
   Radio,
   Select,
   Option,
-  Textarea
+  Textarea,
+  Tooltip
 } from '../src';
 
 class TestComponent extends Component {
@@ -51,8 +54,12 @@ class TestComponent extends Component {
         <Alert type="error">Error</Alert>
         <Alert type="warning">Warning</Alert>
 
-        <h1>Breadcrumbs</h1>
-
+        <h1>Breadcrumb</h1>
+        <Breadcrumb>
+          <BreadcrumbItem><A>Home</A></BreadcrumbItem>
+          <BreadcrumbItem><A>About</A></BreadcrumbItem>
+          <BreadcrumbItem><A>Contact us</A></BreadcrumbItem>
+        </Breadcrumb>
         <h1>Button</h1>
         <div className={cxs({ display: 'flex', justifyContent: 'flex-start' })}>
           <Button type="primary">Primary</Button>
@@ -142,6 +149,11 @@ class TestComponent extends Component {
         />
 
         <h1>Tooltip</h1>
+        <Tooltip
+          tooltipText="This is test text"
+          label="Hover over me"
+          onHover={false}
+        />
       </Background>
     );
   };

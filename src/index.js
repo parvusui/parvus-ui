@@ -7,6 +7,7 @@ import {
 import { A } from "./a";
 import { Alert } from "./alert";
 import { Background } from "./background";
+import { Breadcrumb, BreadcrumbItem } from './breadcrumb'
 import { Button } from "./button";
 import { Card, CardHeader, CardContent, CardFooter } from "./card";
 import { Checkbox } from "./checkbox";
@@ -16,6 +17,7 @@ import { Modal, ModalOverlay } from "./modal";
 import { Radio } from "./radio";
 import { Select, Option } from "./select";
 import { Textarea } from "./textarea";
+import { Tooltip } from "./tooltip";
 
 export {
   ThemeContext,
@@ -25,6 +27,8 @@ export {
   A,
   Alert,
   Background,
+  Breadcrumb,
+  BreadcrumbItem,
   Button,
   Card,
   CardHeader,
@@ -38,6 +42,7 @@ export {
   Radio,
   Select,
   Textarea,
+  Tooltip,
   Option
 };
 
@@ -49,6 +54,8 @@ export default {
   A,
   Alert,
   Background,
+  Breadcrumb,
+  BreadcrumbItem,
   Button,
   Card,
   CardHeader,
@@ -62,5 +69,6 @@ export default {
   Radio,
   Select,
   Textarea,
+  Tooltip,
   Option
 };
