@@ -1,4 +1,5 @@
 # parvus-ui
+[![GitHub issues](https://img.shields.io/github/issues/rnglnd/parvus-ui.svg)](https://github.com/rnglnd/parvus-ui/issues)
 
 Welcome to Parvus-UI!
 
