@@ -2,7 +2,6 @@
 import React, { type Node } from 'react';
 import { withTheme } from '../theme';
 import cxs from 'cxs';
-import classnames from 'classnames';
 import { isDarkColor } from '../utils/helpers';
 
 type Props = {
@@ -39,7 +38,7 @@ const Alert = (props: Props) => {
   });
 
   return (
-    <div className={classnames(_styles, className)} {...otherProps}>
+    <div className={`${_styles} ${className}`} {...otherProps}>
       {children}
     </div>
   );

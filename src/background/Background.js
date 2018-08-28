@@ -2,7 +2,6 @@
 import React, { type Node } from 'react';
 import { withTheme } from '../theme';
 import cxs from "cxs";
-import classnames from "classnames";
 
 type Props = {
   children: string | Node,
@@ -41,8 +40,8 @@ const Background = (props: Props) => {
 
   return (
     <div>
-      <div className={classnames(_bgStyles, bgClassName)} />
-      <div className={classnames(_styles, className)} {...otherProps}>
+      <div className={`${_bgStyles} ${bgClassName}`} />
+      <div className={`${_styles} ${className}`} {...otherProps}>
         {children}
       </div>
     </div>

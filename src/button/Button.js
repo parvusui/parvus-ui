@@ -2,7 +2,6 @@
 import React, { type Node } from 'react';
 import { withTheme } from '../theme';
 import cxs from 'cxs';
-import classnames from 'classnames';
 import { isDarkColor } from '../utils/helpers';
 
 type Props = {
@@ -44,7 +43,7 @@ const Button = (props: Props) => {
   });
 
   return (
-    <button className={classnames(_styles, className)} {...otherProps}>
+    <button className={`${_styles} ${className}`} {...otherProps}>
       {children}
     </button>
   );
