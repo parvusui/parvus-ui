@@ -1,7 +1,6 @@
 /* @flow */
 import React, { type Node } from 'react';
 import cxs from "cxs";
-import classnames from "classnames";
 
 type Props = {
   children: string | Node,
@@ -30,7 +29,7 @@ const A = (props: Props) => {
   });
 
   return (
-    <a className={classnames(_styles, className)} {...otherProps}>
+    <a className={`${_styles} ${className}`} {...otherProps}>
       {children}
     </a>
   );

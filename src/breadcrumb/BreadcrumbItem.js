@@ -1,7 +1,6 @@
 /* @flow */
 import React, { type Node } from 'react';
 import cxs from "cxs";
-import classnames from "classnames";
 import { withTheme } from '../theme';
 import { isDarkColor } from '../utils/helpers';
 
@@ -36,7 +35,7 @@ const BreadcrumbItem = (props: Props) => {
   });
 
   return (
-    <li className={classnames(_styles, className)} {...otherProps}>
+    <li className={`${_styles} ${className}`} {...otherProps}>
       {children}
     </li>
   );

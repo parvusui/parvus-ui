@@ -48,7 +48,6 @@
     "prop-types": "15.x.x"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
     "create-react-context": "^0.2.2",
     "cxs": "^6.2.0"
   },

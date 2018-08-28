@@ -1,7 +1,6 @@
 /* @flow */
 import React, { type Node } from 'react';
 import cxs from "cxs";
-import classnames from "classnames";
 
 type Props = {
   children: string | Node,
@@ -21,7 +20,7 @@ const Breadcrumb = (props: Props) => {
   });
 
   return (
-    <ul className={classnames(_styles, className)} {...otherProps}>
+    <ul className={`${_styles} ${className}`} {...otherProps}>
       {children}
     </ul>
   );
