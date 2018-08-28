@@ -1,14 +1,20 @@
 {
-  "extends": "unobtrusive",
+  "extends": ["unobtrusive", "plugin:react/recommended"],
   "parser": "babel-eslint",
   "rules": {
     "react/jsx-filename-extension": 0,
     "react/jsx-quotes": 0,
     "react/wrap-multilines": 0,
     "react/jsx-closing-tag-location": 0,
-    "react/jsx-sort-prop-types": 0
+    "react/jsx-sort-prop-types": 0,
+    "react/display-name": 0
   },
   "plugins": [
-    "react"
-  ]
+    "react",
+    "flowtype"
+  ],
+  "globals": {
+    "console": true,
+    "document": true
+  }
 }

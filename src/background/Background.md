@@ -1,0 +1,7 @@
+Background:
+
+```
+<Background>
+  Content
+</Background>
+```
