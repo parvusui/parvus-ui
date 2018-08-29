@@ -2,7 +2,6 @@
 import React, { type Node } from 'react';
 import { withTheme } from '../theme';
 import cxs from "cxs";
-import classnames from "classnames";
 
 type Props = {
   children: string | Node,
@@ -22,7 +21,7 @@ const CardContent = (props: Props) => {
   });
 
   return (
-    <div className={classnames(_styles, className)} {...otherProps}>
+    <div className={`${_styles} '${className || ''}`} {...otherProps}>
       {children}
     </div>
   );

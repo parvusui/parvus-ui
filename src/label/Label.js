@@ -2,7 +2,6 @@
 import React, { type Node } from 'react';
 import { withTheme } from '../theme';
 import cxs from "cxs";
-import classnames from "classnames";
 
 type Props = {
   children: string | Node,
@@ -22,7 +21,7 @@ const Label = (props: Props) => {
 
   return (
     <label
-      className={classnames(_styles, className)}
+      className={`${_styles} '${className || ''}`}
       htmlFor={htmlFor}
       {...otherProps}
     >

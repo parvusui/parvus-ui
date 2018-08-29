@@ -2,7 +2,6 @@
 import React from 'react';
 import { withTheme } from "../theme";
 import cxs from "cxs";
-import classnames from "classnames";
 
 type Props = {
   className?: string,
@@ -27,7 +26,7 @@ const Textarea = (props: Props) => {
 
   return (
     <textarea
-      className={classnames(_styles, className)}
+      className={`${_styles} '${className || ''}`}
       onChange={onChange}
       value={value}
       {...otherProps}

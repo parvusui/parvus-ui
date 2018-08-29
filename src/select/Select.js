@@ -2,7 +2,6 @@
 import React, { type Node } from 'react';
 import { withTheme } from '../theme';
 import cxs from "cxs";
-import classnames from "classnames";
 
 type Props = {
   children: string | Node,
@@ -37,8 +36,8 @@ const Select = (props: Props) => {
   });
 
   return (
-    <div className={classnames(_outerStyles, outerClassName)}>
-      <select className={classnames(_styles, className)} {...otherProps}>
+    <div className={`${_outerStyles} ${outerClassName || ''}`}>
+      <select className={`${_styles} '${className || ''}`} {...otherProps}>
         {children}
       </select>
     </div>

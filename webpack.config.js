@@ -6,7 +6,11 @@ module.exports = {
   target: "web",
   entry: "./examples",
   output: {
-    filename: "index.js"
+    path: path.resolve(__dirname, './lib'),
+    filename: "index.js",
+    library: "parvus-ui",
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   resolve: {
     modules: ["node_modules"]

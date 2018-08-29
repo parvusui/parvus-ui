@@ -2,7 +2,6 @@
 import React, { type Node } from 'react';
 import { withTheme } from '../theme';
 import cxs from "cxs";
-import classnames from "classnames";
 
 type Props = {
   className?: string,
@@ -84,8 +83,8 @@ const Tooltip = (props: Props) => {
   });
 
   return (
-    <div className={classnames(_styles, className)} {...otherProps}>{label}
-      <span className={classnames(_textStyles, textClassName)}>{tooltipText}</span>
+    <div className={`${_styles} '${className || ''}`} {...otherProps}>{label}
+      <span className={`${_textStyles} ${textClassName}`}>{tooltipText}</span>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 /* @flow */
 import React from 'react';
 import cxs from "cxs";
-import classnames from "classnames";
 
 type Props = {
   checked: boolean,
@@ -71,15 +70,15 @@ const Radio = (props: Props) => {
   });
 
   return (
-    <label className={classnames(_containerStyles, containerClassName)}>
+    <label className={`${_containerStyles} ${containerClassName || ''}`}>
       <input
-        className={classnames(_inputStyles, inputClassName)}
+        className={`${_inputStyles} ${inputClassName || ''}`}
         type="radio"
         onChange={onChange}
         checked={checked}
         {...otherProps}
       />
-      <span className={classnames(_styles, className)}></span>
+      <span className={`${_styles} '${className || ''}`}></span>
     </label>
   );
 };
