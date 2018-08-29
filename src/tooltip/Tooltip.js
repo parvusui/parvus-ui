@@ -84,7 +84,7 @@ const Tooltip = (props: Props) => {
 
   return (
     <div className={`${_styles} '${className || ''}`} {...otherProps}>{label}
-      <span className={`${_textStyles} ${textClassName}`}>{tooltipText}</span>
+      <span className={`${_textStyles} ${textClassName || ''}`}>{tooltipText}</span>
     </div>
   );
 };
