@@ -1,9 +1,13 @@
 import pkg from './package.json';
 import babel from 'rollup-plugin-babel';
 import replace from 'rollup-plugin-replace';
-import uglify from 'rollup-plugin-uglify-es';
 import resolve from 'rollup-plugin-node-resolve';
 import commonJS from 'rollup-plugin-commonjs'
+
+const externals = [
+  ...Object.keys(pkg.dependencies || {}),
+  ...Object.keys(pkg.devDependencies || {})
+];
 
 export default {
   input: 'src/index.js',
@@ -18,12 +22,7 @@ export default {
       file: pkg.module
     }
   ],
-  external: [
-    'react', 
-    'react-dom',
-    'create-react-context',
-    'cxs'
-  ],
+  external: externals,
   plugins: [
     replace({
       'process.env.NODE_ENV': JSON.stringify('production')
