@@ -1,7 +1,6 @@
 import {
   themeContext,
   ThemeProvider,
-  withPassedTheme,
   withTheme
 } from "./theme";
 import { A } from "./a";
@@ -22,7 +21,6 @@ import { Tooltip } from "./tooltip";
 export {
   themeContext,
   ThemeProvider,
-  withPassedTheme,
   withTheme,
   A,
   Alert,
@@ -49,7 +47,6 @@ export {
 export default {
   themeContext,
   ThemeProvider,
-  withPassedTheme,
   withTheme,
   A,
   Alert,
