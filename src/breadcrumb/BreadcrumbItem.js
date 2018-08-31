@@ -35,7 +35,7 @@ const BreadcrumbItem = (props: Props) => {
   });
 
   return (
-    <li className={`${_styles} ${className}`} {...otherProps}>
+    <li className={`${_styles} '${className || ''}`} {...otherProps}>
       {children}
     </li>
   );

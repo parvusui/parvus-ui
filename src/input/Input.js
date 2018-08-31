@@ -27,7 +27,7 @@ const Input = (props: Props) => {
 
   return (
     <input
-      className={`${_styles} ${className}`}
+      className={`${_styles} '${className || ''}`}
       onChange={onChange}
       value={value}
       type={type}

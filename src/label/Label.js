@@ -21,7 +21,7 @@ const Label = (props: Props) => {
 
   return (
     <label
-      className={`${_styles} ${className}`}
+      className={`${_styles} '${className || ''}`}
       htmlFor={htmlFor}
       {...otherProps}
     >

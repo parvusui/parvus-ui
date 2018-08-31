@@ -23,7 +23,7 @@ const Modal = (props: Props) => {
   });
 
   return (
-    <div className={`${_styles} ${className}`} {...otherProps}>
+    <div className={`${_styles} '${className || ''}`} {...otherProps}>
       {children}
     </div>
   );

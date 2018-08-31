@@ -36,8 +36,8 @@ const Select = (props: Props) => {
   });
 
   return (
-    <div className={`${_outerStyles} ${outerClassName}`}>
-      <select className={`${_styles} ${className}`} {...otherProps}>
+    <div className={`${_outerStyles} ${outerClassName || ''}`}>
+      <select className={`${_styles} '${className || ''}`} {...otherProps}>
         {children}
       </select>
     </div>

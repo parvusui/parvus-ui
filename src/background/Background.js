@@ -40,8 +40,8 @@ const Background = (props: Props) => {
 
   return (
     <div>
-      <div className={`${_bgStyles} ${bgClassName}`} />
-      <div className={`${_styles} ${className}`} {...otherProps}>
+      <div className={`${_bgStyles} ${bgClassName || ''}`} />
+      <div className={`${_styles} '${className || ''}`} {...otherProps}>
         {children}
       </div>
     </div>

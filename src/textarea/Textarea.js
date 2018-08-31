@@ -26,7 +26,7 @@ const Textarea = (props: Props) => {
 
   return (
     <textarea
-      className={`${_styles} ${className}`}
+      className={`${_styles} '${className || ''}`}
       onChange={onChange}
       value={value}
       {...otherProps}

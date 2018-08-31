@@ -70,15 +70,15 @@ const Radio = (props: Props) => {
   });
 
   return (
-    <label className={`${_containerStyles} ${containerClassName}`}>
+    <label className={`${_containerStyles} ${containerClassName || ''}`}>
       <input
-        className={`${_inputStyles} ${inputClassName}`}
+        className={`${_inputStyles} ${inputClassName || ''}`}
         type="radio"
         onChange={onChange}
         checked={checked}
         {...otherProps}
       />
-      <span className={`${_styles} ${className}`}></span>
+      <span className={`${_styles} '${className || ''}`}></span>
     </label>
   );
 };

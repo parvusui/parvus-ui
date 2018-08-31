@@ -18,7 +18,7 @@ const Option = (props: Props) => {
   });
 
   return (
-    <option className={`${_styles} ${className}`} {...otherProps}>
+    <option className={`${_styles} '${className || ''}`} {...otherProps}>
       {children}
     </option>
   );

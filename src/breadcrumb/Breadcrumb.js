@@ -20,7 +20,7 @@ const Breadcrumb = (props: Props) => {
   });
 
   return (
-    <ul className={`${_styles} ${className}`} {...otherProps}>
+    <ul className={`${_styles} '${className || ''}`} {...otherProps}>
       {children}
     </ul>
   );
