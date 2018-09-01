@@ -1,6 +1,6 @@
 {
   "name": "parvus-ui",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "A small footprint shareable UI component library for React and Preact",
   "repository": "github:rnglnd/parvus-ui",
   "author": "Steven Ringland <steven.ringland@gmail.com>",
