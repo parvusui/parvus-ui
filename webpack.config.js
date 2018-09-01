@@ -5,35 +5,13 @@ const path = require("path");
 module.exports = {
   target: "web",
   entry: "./examples",
-  output: {
-    path: path.resolve(__dirname, './lib'),
-    filename: "index.js",
-    library: "parvus-ui",
-    libraryTarget: 'umd',
-    umdNamedDefine: true
-  },
-  externals: {
-    react: 'react',
-    'react-dom': 'react-dom'
-  },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ["babel-loader", "eslint-loader"]
-      },
-      {
-				test: /\.css$/,
-				loader: 'style-loader!css-loader?importLoaders=1',
-			},
-			{
-				test: /\.svg$/,
-				loader: 'file-loader',
-				query: {
-					name: 'static/media/[name].[hash:8].[ext]',
-				},
-			}
+      }
     ]
   },
   plugins: [new HtmlWebpackPlugin()],
