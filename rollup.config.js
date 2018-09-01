@@ -21,7 +21,9 @@ export default {
   ],
   external: [
     'react', 
-    'react-dom'
+    'react-dom',
+    'cxs',
+    'create-react-context'
   ],
   plugins: [
     peerDepsExternal(),
