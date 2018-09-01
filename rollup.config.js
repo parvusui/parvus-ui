@@ -1,7 +1,10 @@
 import pkg from './package.json';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import babel from 'rollup-plugin-babel';
+import localResolve from 'rollup-plugin-local-resolve';
 import resolve from 'rollup-plugin-node-resolve';
 import commonJS from 'rollup-plugin-commonjs'
+import filesize from 'rollup-plugin-filesize';
 
 export default {
   input: 'src/index.js',
@@ -21,10 +24,13 @@ export default {
     'react-dom'
   ],
   plugins: [
-    resolve(),
+    peerDepsExternal(),
     babel({
       exclude: 'node_modules/**'
     }),
-    commonJS()
+    localResolve(),
+    resolve(),
+    commonJS(),
+    filesize()
   ]
 };
