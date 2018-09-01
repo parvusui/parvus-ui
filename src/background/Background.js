@@ -14,7 +14,7 @@ type Props = {
 };
 
 const Background = (props: Props) => {
-  const { bgClassName, className, children, bgStyles, styles, theme, otherProps } = props;
+  const { bgClassName, className, children, bgStyles, styles, theme, ...otherProps } = props;
 
   const _bgStyles = cxs({
     position: "absolute",

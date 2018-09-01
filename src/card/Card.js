@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Card = (props: Props) => {
-  const { children, className, styles, theme, otherProps } = props;
+  const { children, className, styles, theme, ...otherProps } = props;
 
   const _styles = cxs({
     borderRadius: theme ? theme.borderRadius : 0,

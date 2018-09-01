@@ -84,13 +84,21 @@ class TestComponent extends Component {
         </Card>
 
         <h1>Checkbox</h1>
+        <Label htmlFor="testCheckboxMain">
+         Test checkbox
+        </Label>
         <Checkbox
+          id="testCheckboxMain"
           checked={checkboxChecked}
           onChange={() => this.setState({ checkboxChecked: !checkboxChecked })}
         />
 
         <h1>Input</h1>
+        <Label htmlFor="testInputMain">
+         Test input
+        </Label>
         <Input
+          id="testInputMain"
           value={inputText}
           onChange={(event) => { this.setState({ inputText: event.target.value })}}
         />
@@ -127,23 +135,38 @@ class TestComponent extends Component {
         </ModalOverlay>
 
         <h1>Radio</h1>
+        <Label htmlFor="radio1">
+          Radio 1
+        </Label>
         <Radio
+          id="radio1"
           checked={true}
           onChange={() => { }}
         />
+        <Label htmlFor="radio2">
+          Radio 2
+        </Label>
         <Radio
+          id="radio2"
           checked={false}
           onChange={() => { }}
         />
 
         <h1>Select</h1>
-        <Select>
-          <Option id="test1" value="test1">Test 1</Option>
-          <Option id="test1" value="test2">Test 2</Option>
+        <Label htmlFor="testSelect">
+         Test select
+        </Label>
+        <Select id="testSelect">
+          <Option id="option1" value="test1">Test 1</Option>
+          <Option id="option2" value="test2">Test 2</Option>
         </Select>
 
         <h1>Textarea</h1>
+        <Label htmlFor="testTextarea">
+         Test textarea
+        </Label>
         <Textarea
+          id="testTextarea"
           value={textareaText}
           onChange={(event) => { this.setState({ textareaText: event.target.value })}}
         />

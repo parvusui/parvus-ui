@@ -12,7 +12,7 @@ type Props = {
 };
 
 const CardHeader = (props: Props) => {
-  const { children, className, styles, theme, otherProps } = props;
+  const { children, className, styles, theme, ...otherProps } = props;
 
   const _styles = cxs({
     backgroundColor: theme ? theme.neutralColor : "#f9f9f9",

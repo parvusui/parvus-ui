@@ -14,7 +14,7 @@ type Props = {
 };
 
 const Input = (props: Props) => {
-  const { className, styles, type, theme, value, onChange, otherProps } = props;
+  const { className, styles, type, theme, value, onChange, ...otherProps } = props;
 
   const _styles = cxs({
     borderRadius: theme ? theme.borderRadius : 0,
