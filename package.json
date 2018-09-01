@@ -17,11 +17,11 @@
   "bundlesize": [
     {
       "path": "./lib/index.js",
-      "maxSize": "5 kB"
+      "maxSize": "15 kB"
     },
     {
       "path": "./es/index.js",
-      "maxSize": "5 kB"
+      "maxSize": "15 kB"
     }
   ],
   "main": "lib/index.js",
