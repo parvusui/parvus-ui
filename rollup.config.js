@@ -17,14 +17,17 @@ export default {
       file: pkg.module
     }
   ],
+  external: [
+    'react', 
+    'react-dom'
+  ],
   plugins: [
     replace({
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
     resolve(),
     babel({
-      exclude: 'node_modules/**',
-      plugins: ['external-helpers']
+      exclude: 'node_modules/**'
     }),
     commonJS()
   ]
