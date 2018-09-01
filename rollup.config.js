@@ -5,8 +5,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonJS from 'rollup-plugin-commonjs'
 
 const externals = [
-  ...Object.keys(pkg.dependencies || {}),
-  ...Object.keys(pkg.devDependencies || {})
+  ...Object.keys(pkg.dependencies || {})
 ];
 
 export default {
