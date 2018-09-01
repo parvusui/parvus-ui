@@ -36,7 +36,7 @@
     "test": "jest",
     "build": "rollup -c",
     "precommit": "exit 0",
-    "postinstall": "flow-typed install && flow-typed create-stub cxs@x && flow-typed create-stub create-react-context@x",
+    "flowinstall": "flow-typed install && flow-typed create-stub cxs@x && flow-typed create-stub create-react-context@x",
     "prepublish": "npm run clean && npm run build",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
