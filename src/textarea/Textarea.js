@@ -13,7 +13,7 @@ type Props = {
 };
 
 const Textarea = (props: Props) => {
-  const { className, styles, theme, value, onChange, otherProps } = props;
+  const { className, styles, theme, value, onChange, ...otherProps } = props;
 
   const _styles = cxs({
     borderRadius: theme ? theme.borderRadius : 0,

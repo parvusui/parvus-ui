@@ -14,7 +14,7 @@ type Props = {
 };
 
 const Select = (props: Props) => {
-  const { children, className, styles, theme, outerClassName, outerStyles, otherProps } = props;
+  const { children, className, styles, theme, outerClassName, outerStyles, ...otherProps } = props;
 
   const _outerStyles = cxs({
     border: "1px solid #dcdcdc",

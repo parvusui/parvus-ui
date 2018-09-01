@@ -59,7 +59,7 @@ const Tooltip = (props: Props) => {
     label,
     onHover,
     textPosition,
-    otherProps
+    ...otherProps
   } = props;
 
   const _textStyles = cxs({

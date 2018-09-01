@@ -10,7 +10,7 @@ type Props = {
 };
 
 const Option = (props: Props) => {
-  const { children, className, styles, otherProps } = props;
+  const { children, className, styles, ...otherProps } = props;
 
   const _styles = cxs({
     fontSize: '1.25rem',

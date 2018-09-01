@@ -11,7 +11,7 @@ type Props = {
 };
 
 const Modal = (props: Props) => {
-  const { className, children, isOpen, styles, otherProps } = props;
+  const { className, children, isOpen, styles, ...otherProps } = props;
 
   const _styles = cxs({
     display: isOpen ? 'visible' : 'none',

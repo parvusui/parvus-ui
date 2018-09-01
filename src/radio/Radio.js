@@ -24,7 +24,7 @@ const Radio = (props: Props) => {
     containerStyles,
     inputStyles,
     onChange,
-    otherProps
+    ...otherProps
   } = props;
 
   const _containerStyles = cxs({
@@ -70,7 +70,7 @@ const Radio = (props: Props) => {
   });
 
   return (
-    <label className={`${_containerStyles} ${containerClassName || ''}`}>
+    <label className={`${_containerStyles} ${containerClassName || ''}`} aria-hidden>
       <input
         className={`${_inputStyles} ${inputClassName || ''}`}
         type="radio"
