@@ -17,18 +17,21 @@ export default {
     {
       format: 'es',
       file: pkg.module
-    }
+    },
+    {
+      file: pkg.browser,
+      format: 'umd',
+      name: 'parvus',
+    },
   ],
   external: [
-    'react', 
-    'react-dom',
-    'cxs',
-    'create-react-context'
+    ...Object.keys(pkg.dependencies || {})
   ],
   plugins: [
     peerDepsExternal(),
     babel({
-      exclude: 'node_modules/**'
+      exclude: 'node_modules/**',
+      plugins: ['external-helpers']
     }),
     localResolve(),
     resolve(),

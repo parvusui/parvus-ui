@@ -26,6 +26,7 @@
   ],
   "main": "lib/index.js",
   "module": "es/index.js",
+  "browser": "lib/index.umd.js",
   "jsnext:main": "es/index.js",
   "unpkg": "dist/parvus-ui.min.js",
   "scripts": {
