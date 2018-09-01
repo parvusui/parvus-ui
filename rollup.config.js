@@ -4,9 +4,7 @@ import replace from 'rollup-plugin-replace';
 import resolve from 'rollup-plugin-node-resolve';
 import commonJS from 'rollup-plugin-commonjs'
 
-const externals = [
-  ...Object.keys(pkg.dependencies || {})
-];
+const externals = ['react', 'react-dom'];
 
 export default {
   input: 'src/index.js',
