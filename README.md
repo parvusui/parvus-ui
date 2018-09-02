@@ -11,9 +11,11 @@ The origin of this is seeing how big component libraries had become. They had lo
 Features:
 - Over 15 component types that are often found in every app (buttons, cards, links, breadcrumbs, modals...).
 - Theme provider with contaxt API polyfill for Preact and React 15.
-- `Styles` and `className` props to customise every component
+- `styles` and `className` props to customise every component
 - A dev component and styleguide to view and try out every component.
-- 5 KB.
+- Less than 5 KB.
+
+**Check out our styleguide: https://parvusui.github.io/**
 
 ## Installation
 
