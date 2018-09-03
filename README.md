@@ -16,6 +16,7 @@ Features:
 - Less than 5 KB.
 
 **Check out our styleguide: https://parvusui.github.io/**
+**View an example project: [github.com/parvusui/parvus-ui-example](https://github.com/parvusui/parvus-ui-example)**
 
 ## Installation
 
