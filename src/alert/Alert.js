@@ -33,7 +33,7 @@ const Alert = (props: Props) => {
     lineHeight: '1.5',
     padding: '.75rem 1.25rem;',
     textAlign: 'left',
-    width: '100%',
+    width: 'auto',
     ...styles
   });
 
