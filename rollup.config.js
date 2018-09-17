@@ -21,11 +21,12 @@ export default {
     {
       file: pkg.browser,
       format: 'umd',
-      name: 'parvus',
+      name: 'parvus'
     },
   ],
   external: [
-    ...Object.keys(pkg.dependencies || {})
+    ...Object.keys(pkg.dependencies || {}),
+    ...Object.keys(pkg.peerDependencies || {})
   ],
   plugins: [
     peerDepsExternal(),
