@@ -16,6 +16,8 @@ import {
   Checkbox,
   Input,
   Label,
+  Menu,
+  MenuItem,
   Modal,
   ModalOverlay,
   Radio,
@@ -112,6 +114,16 @@ class TestComponent extends Component {
           value="Hello"
           onChange={() => { }}
         />
+
+        <h1>Menu</h1>
+        <Menu>
+          <MenuItem>
+            First
+          </MenuItem>
+          <MenuItem>
+            Second
+          </MenuItem>
+        </Menu>
 
         <h1>Modal</h1>
         <Button type="primary" onClick={() => this.setState({ modalOpen: true })}>Open Modal</Button>
