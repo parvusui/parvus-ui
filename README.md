@@ -1,6 +1,6 @@
 # parvus-ui
 [![npm](https://img.shields.io/npm/v/parvus-ui.svg)](https://www.npmjs.com/package/parvus-ui)
-[![GitHub issues](https://img.shields.io/github/issues/rnglnd/parvus-ui.svg)](https://github.com/rnglnd/parvus-ui/issues)
+[![GitHub issues](https://img.shields.io/github/issues/parvusui/parvus-ui.svg)](https://github.com/rnglnd/parvus-ui/issues)
 
 Welcome to Parvus-UI!
 
