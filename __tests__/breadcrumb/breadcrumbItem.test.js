@@ -1,16 +1,16 @@
 import React from 'react';
 import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import { Alert } from '../../src/alert';
+import { BreadcrumbItem } from '../../src/breadcrumb';
 
 configure({ adapter: new Adapter() });
 
-describe('<Alert />', () => {
+describe('<BreadcrumbItem />', () => {
   const wrapper = mount(
-    <Alert>Test</Alert>
+    <BreadcrumbItem>Test</BreadcrumbItem>
   );
   
-  it('Should render alert with the defined text', () => {
+  it('Should render breadcrumb item with the defined text', () => {
     expect(wrapper.text()).toEqual('Test');
   });
 });

@@ -15,7 +15,7 @@ Features:
 - A dev component and styleguide to view and try out every component.
 - Less than 5 KB.
 
-**Check out our styleguide: https://parvusui.github.io/**
+**Check out our styleguide: [parvusui.github.io](https://parvusui.github.io/)**
 **View an example project: [github.com/parvusui/parvus-ui-example](https://github.com/parvusui/parvus-ui-example)**
 
 ## Installation
@@ -74,6 +74,9 @@ All the components follow a similar pattern, just check out the props it require
   Click
 </Button>
 ```
+
+### Accessibility
+Everything you need for great accessibility support is included out of the box and, in fact, the examples page gets a 100 accessibility score on lighthouse.
 
 ## Development
 

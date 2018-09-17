@@ -1,16 +1,16 @@
 import React from 'react';
 import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import { Alert } from '../../src/alert';
+import { A } from '../../src/a';
 
 configure({ adapter: new Adapter() });
 
-describe('<Alert />', () => {
+describe('<A />', () => {
   const wrapper = mount(
-    <Alert>Test</Alert>
+    <A>Test</A>
   );
   
-  it('Should render alert with the defined text', () => {
+  it('Should render a with the defined text', () => {
     expect(wrapper.text()).toEqual('Test');
   });
 });

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { ThemeProvider } from '../src/';
 import TestComponent from './TestComponent';
 
+document.documentElement.lang = 'en';
 const div = document.createElement('div');
 document.body.appendChild(div);
 
