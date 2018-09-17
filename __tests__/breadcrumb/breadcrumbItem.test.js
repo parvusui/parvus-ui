@@ -6,11 +6,11 @@ import { BreadcrumbItem } from '../../src/breadcrumb';
 configure({ adapter: new Adapter() });
 
 describe('<BreadcrumbItem />', () => {
+  const wrapper = mount(
+    <BreadcrumbItem>Test</BreadcrumbItem>
+  );
+  
   it('Should render breadcrumb item with the defined text', () => {
-    const wrapper = mount(
-      <BreadcrumbItem>Test</BreadcrumbItem>
-    );
-
     expect(wrapper.text()).toEqual('Test');
   });
 });

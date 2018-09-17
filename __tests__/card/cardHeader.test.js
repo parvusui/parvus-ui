@@ -6,11 +6,11 @@ import { CardHeader } from '../../src/card';
 configure({ adapter: new Adapter() });
 
 describe('<CardHeader />', () => {
+  const wrapper = mount(
+    <CardHeader>Test</CardHeader>
+  );
+  
   it('Should render card header with the defined text', () => {
-    const wrapper = mount(
-      <CardHeader>Test</CardHeader>
-    );
-
     expect(wrapper.text()).toEqual('Test');
   });
 });

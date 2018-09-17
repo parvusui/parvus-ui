@@ -6,11 +6,17 @@ import { Button } from '../../src/button';
 configure({ adapter: new Adapter() });
 
 describe('<Button />', () => {
-  it('Should render button with the defined text', () => {
-    const wrapper = mount(
-      <Button>Test</Button>
-    );
+  const callback = jest.fn();
+  const wrapper = mount(
+    <Button onClick={callback}>Test</Button>
+  );
 
+  it('Should render button with the defined text', () => {
     expect(wrapper.text()).toEqual('Test');
+  });
+
+  it('should trigger the onClick callback', () => {
+    wrapper.find('button').simulate('click');
+    expect(callback).toHaveBeenCalled();
   });
 });

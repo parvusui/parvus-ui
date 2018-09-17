@@ -6,11 +6,11 @@ import { Label } from '../../src/label';
 configure({ adapter: new Adapter() });
 
 describe('<Label />', () => {
+  const wrapper = mount(
+    <Label>Test</Label>
+  );
+  
   it('Should render label with the defined text', () => {
-    const wrapper = mount(
-      <Label>Test</Label>
-    );
-
     expect(wrapper.text()).toEqual('Test');
   });
 });

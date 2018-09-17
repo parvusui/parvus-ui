@@ -6,11 +6,11 @@ import { CardFooter } from '../../src/card';
 configure({ adapter: new Adapter() });
 
 describe('<CardFooter />', () => {
+  const wrapper = mount(
+    <CardFooter>Test</CardFooter>
+  );
+  
   it('Should render card footer with the defined text', () => {
-    const wrapper = mount(
-      <CardFooter>Test</CardFooter>
-    );
-
     expect(wrapper.text()).toEqual('Test');
   });
 });

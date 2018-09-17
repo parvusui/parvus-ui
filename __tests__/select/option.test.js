@@ -6,11 +6,11 @@ import { Option } from '../../src/select';
 configure({ adapter: new Adapter() });
 
 describe('<Option />', () => {
+  const wrapper = mount(
+    <Option>Test</Option>
+  );
+  
   it('Should render Option with the defined text', () => {
-    const wrapper = mount(
-      <Option>Test</Option>
-    );
-
     expect(wrapper.text()).toEqual('Test');
   });
 });

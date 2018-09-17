@@ -6,11 +6,11 @@ import { A } from '../../src/a';
 configure({ adapter: new Adapter() });
 
 describe('<A />', () => {
+  const wrapper = mount(
+    <A>Test</A>
+  );
+  
   it('Should render a with the defined text', () => {
-    const wrapper = mount(
-      <A>Test</A>
-    );
-
     expect(wrapper.text()).toEqual('Test');
   });
 });

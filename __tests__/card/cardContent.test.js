@@ -5,12 +5,12 @@ import { CardContent } from '../../src/card';
 
 configure({ adapter: new Adapter() });
 
-describe('<Card />', () => {
-  it('Should render card content with the defined text', () => {
-    const wrapper = mount(
-      <CardContent>Test</CardContent>
-    );
+describe('<CardContent />', () => {
+  const wrapper = mount(
+    <CardContent>Test</CardContent>
+  );
 
+  it('Should render card content with the defined text', () => {
     expect(wrapper.text()).toEqual('Test');
   });
 });

@@ -6,11 +6,11 @@ import { Modal } from '../../src/modal';
 configure({ adapter: new Adapter() });
 
 describe('<Modal />', () => {
+  const wrapper = mount(
+    <Modal>Test</Modal>
+  );
+  
   it('Should render modal with the defined text', () => {
-    const wrapper = mount(
-      <Modal>Test</Modal>
-    );
-
     expect(wrapper.text()).toEqual('Test');
   });
 });
