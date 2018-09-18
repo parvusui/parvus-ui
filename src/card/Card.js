@@ -16,6 +16,7 @@ const Card = (props: Props) => {
 
   const _styles = cxs({
     borderRadius: theme ? theme.borderRadius : 0,
+    fontSize: '1.25rem',
     width: "100%",
     border: "1px solid #dcdcdc",
     ...styles

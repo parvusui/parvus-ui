@@ -23,13 +23,13 @@ const ThemeProvider = (props: Props) => {
 
   const _theme = {
     backgroundColor: theme.backgroundColor || "#ffffff",
-    borderRadius: theme.borderRadius || 0,
     primaryColor: theme.primaryColor || "blue",
     secondaryColor: theme.secondaryColor || "gray",
     tertiaryColor: theme.tertiaryColor || "white",
     successColor: theme.successColor || "green",
     errorColor: theme.errorColor || "red",
     warningColor: theme.warningColor || "orange",
+    borderRadius: theme.borderRadius || 0,
     fontColor: theme.fontColor || '#000000',
     fontFamily: theme.fontFamily || 'Helvetica Neue, Helvetica, Arial, sans-serif'
   };
