@@ -15,6 +15,10 @@ Theme Provider:
       fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'
     }}
   >
-    App code here
+    <Alert type="success">
+      An alert with a theme!
+      <br/>
+      <Button type="secondary">A button with a theme!</Button>
+    </Alert>
   </ThemeProvider>
 ```
