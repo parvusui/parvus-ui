@@ -15,10 +15,12 @@ Theme Provider:
       fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'
     }}
   >
-    <Alert type="success">
-      An alert with a theme!
+    <div style={{ textAlign: 'center' }}>
+      <Alert type="success">
+        An alert with a theme!
+      </Alert>
       <br/>
       <Button type="secondary">A button with a theme!</Button>
-    </Alert>
+    </div>
   </ThemeProvider>
 ```
