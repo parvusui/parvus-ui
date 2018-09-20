@@ -78,6 +78,9 @@ All the components follow a similar pattern, just check out the props it require
 ### Accessibility
 Everything you need for great accessibility support is included out of the box and, in fact, the examples page gets a 100 accessibility score on lighthouse.
 
+### Preact
+This library works with preact by using preact-compat which you can find [here](https://www.npmjs.com/package/preact-compat).
+
 ## Development
 
 Help would be really great as there's so much to do. To get started:
