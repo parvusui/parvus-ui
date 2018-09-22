@@ -1,12 +1,19 @@
 {
   "name": "parvus-ui",
-  "version": "1.0.3",
-  "description":
-    "A micro UI kit with all the main UI components in less than 5KB",
+  "version": "1.1.0",
+  "description": "A micro UI kit with all the main UI components in less than 5KB",
   "repository": "github:rnglnd/parvus-ui",
   "author": "Steven Ringland <steven.ringland@gmail.com>",
   "license": "MIT",
-  "keywords": ["react", "preact", "component", "library", "ui", "ux", "design"],
+  "keywords": [
+    "react",
+    "preact",
+    "component",
+    "library",
+    "ui",
+    "ux",
+    "design"
+  ],
   "bundlesize": [
     {
       "path": "./lib/index.js",
@@ -30,18 +37,18 @@
     "test": "NODE_ENV=testing jest",
     "build": "rollup -c",
     "precommit": "npm test && lint-staged",
-    "flowinstall":
-      "flow-typed install && flow-typed create-stub cxs@x && flow-typed create-stub create-react-context@x",
-    "require-npm4-to-publish":
-      "semver -r '>=4.0.0' $(npm --version) || (echo 'NPM 4+ required to publish' && exit 1)",
-    "prepublish":
-      "(not-in-publish && echo 'Skipping prepublish') || npm run require-npm4-to-publish",
+    "flowinstall": "flow-typed install && flow-typed create-stub cxs@x && flow-typed create-stub create-react-context@x",
+    "require-npm4-to-publish": "semver -r '>=4.0.0' $(npm --version) || (echo 'NPM 4+ required to publish' && exit 1)",
+    "prepublish": "(not-in-publish && echo 'Skipping prepublish') || npm run require-npm4-to-publish",
     "prepublishOnly": "npm run clean && npm run build",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
   },
   "lint-staged": {
-    "*.{js,jsx,json}": ["prettier-eslint --write", "git add"]
+    "*.{js,jsx,json}": [
+      "prettier-eslint --write",
+      "git add"
+    ]
   },
   "peerDependencies": {
     "prop-types": "15.x.x",
@@ -107,6 +114,9 @@
       "^.+\\.js$": "./node_modules/babel-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/))\\.js?$",
-    "moduleFileExtensions": ["js", "json"]
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ]
   }
 }
