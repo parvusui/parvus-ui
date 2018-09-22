@@ -63,7 +63,7 @@ const Tooltip = (props: Props) => {
   } = props;
 
   const _textStyles = cxs({
-    visibility: onHover ? 'visible' : 'hidden',
+    display: 'none',
     width: '120px',
     backgroundColor: '#000000',
     color: '#ffffff',
@@ -79,6 +79,9 @@ const Tooltip = (props: Props) => {
   const _styles = cxs({
     position: 'relative',
     display: 'inline-block',
+    ':hover span': {
+      display: 'inline',
+    },
     ...styles
   });
 
