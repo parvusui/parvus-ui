@@ -1,5 +1,3 @@
-# Title
-
 ## Description
 
 What type of issue is this?
