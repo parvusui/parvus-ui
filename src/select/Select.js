@@ -17,7 +17,7 @@ const Select = (props: Props) => {
   const { children, className, styles, theme, outerClassName, outerStyles, ...otherProps } = props;
 
   const _outerStyles = cxs({
-    border: "1px solid #dcdcdc",
+    border: "0.0625rem solid #dcdcdc",
     borderRadius: theme ? theme.borderRadius : 0,
     display: 'inline-block',
     padding: '.25rem',

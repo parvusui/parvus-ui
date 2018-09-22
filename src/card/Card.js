@@ -18,7 +18,7 @@ const Card = (props: Props) => {
     borderRadius: theme ? theme.borderRadius : 0,
     fontSize: '1.25rem',
     width: "100%",
-    border: "1px solid #dcdcdc",
+    border: "0.0625rem solid #dcdcdc",
     ...styles
   });
 

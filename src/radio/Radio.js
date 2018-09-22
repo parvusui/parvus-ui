@@ -30,8 +30,8 @@ const Radio = (props: Props) => {
   const _containerStyles = cxs({
     display: 'block',
     position: 'relative',
-    paddingLeft: '25px',
-    height: "25px",
+    paddingLeft: '1.563rem',
+    height: '1.563rem',
     cursor: 'pointer',
     ...containerStyles
   });
@@ -49,8 +49,8 @@ const Radio = (props: Props) => {
     position: 'absolute',
     top: 0,
     left: 0,
-    width: "25px",
-    height: "25px",
+    width: '1.563rem',
+    height: '1.563rem',
     zIndex: 0,
     ':hover': {
       opacity: checked ? 1 : 0.7
@@ -59,10 +59,10 @@ const Radio = (props: Props) => {
       content: '""',
       position: 'absolute',
       display: checked ? 'block' : 'none',
-      top: '9px',
-      left: '9px',
-      width: '8px',
-      height: '8px',
+      top: '0.5625rem',
+      left: '0.5625rem',
+      width: '0.5rem',
+      height: '0.5rem',
       borderRadius: '50%',
       backgroundColor: '#ffffff'
     },

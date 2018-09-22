@@ -11,7 +11,6 @@ type Props = {
   textStyles?: Object,
   tooltipText: string | Node,
   label: string | Node,
-  onHover?: boolean,
   textPosition?: string,
   otherProps?: Object
 };
@@ -19,31 +18,31 @@ type Props = {
 const getPositionStyles = (position: string) => {
   if (position === 'top') {
     return {
-      width: '120px',
+      width: '7.5rem',
       bottom: '100%',
       left: '50%', 
-      marginLeft: '-60px'
+      marginLeft: '-3.75rem'
     }
   }
 
   if (position === 'left') {
     return {
-      top: '-5px',
+      top: '-0.3125rem',
       right: '105%'
     }
   }
 
   if (position === 'bottom') {
     return {
-      width: '120px',
+      width: '7.5rem',
       top: '100%',
       left: '50%', 
-      marginLeft: '-60px'
+      marginLeft: '-3.75rem'
     }
   }
 
   return {
-    top: '-5px',
+    top: '-0.3125rem',
     left: '105%' 
   }
 }
@@ -57,7 +56,6 @@ const Tooltip = (props: Props) => {
     textStyles,
     tooltipText,
     label,
-    onHover,
     textPosition,
     ...otherProps
   } = props;
