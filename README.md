@@ -42,6 +42,7 @@ To get started on theming just add the provider to your entry or app js file and
     successColor: '#3cb371',
     errorColor: '#ff0000',
     warningColor: '#ffa500',
+    borderRadius: 0,
     fontColor: '#000000',
     fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'
   }}
