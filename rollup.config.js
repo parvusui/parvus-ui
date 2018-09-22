@@ -5,23 +5,34 @@ import localResolve from 'rollup-plugin-local-resolve';
 import resolve from 'rollup-plugin-node-resolve';
 import commonJS from 'rollup-plugin-commonjs';
 
+const globals = {
+  react: 'React',
+  'create-react-context': 'createReactContext',
+  'react-transition-group': 'ReactTransitionGroup',
+  'prop-types': 'PropTypes',
+  cxs: 'cxs',
+};
+
 export default {
   input: 'src/index.js',
   output: [
     {
       format: 'cjs',
       name: 'parvus',
-      file: pkg.main
+      file: pkg.main,
+      globals
     },
     {
       format: 'es',
-      file: pkg.module
+      file: pkg.module,
+      globals
     },
     {
       file: pkg.browser,
       format: 'umd',
-      name: 'parvus'
-    },
+      name: 'parvus',
+      globals
+    }
   ],
   external: [
     ...Object.keys(pkg.dependencies || {}),
