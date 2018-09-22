@@ -91,10 +91,10 @@ Help would be really great as there's so much to do. To get started:
 - When finished submit your pull request and let us have a look.
 
 ### Guidelines
-- Use `rem` everywhere although `px` are acceptable for borders and when absoulte positing elements (although using `rem` would be awesome for that).
-- All components should be stateless functional components, although if there's a case otherwise submit the pr anyway and we can chat.
-- Tests should be added for every new component.
+- All components should be stateless functional components, although if there's a case otherwise please submit the pr anyway.
+- All components should have tests.
 - All components should be added to the examples view and styleguide.
+- Use `rem` in every component.
 
 ### Commands
 Install dependencies:

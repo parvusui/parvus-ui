@@ -33,8 +33,8 @@ const Checkbox = (props: Props) => {
   const _containerStyles = cxs({
     display: 'block',
     position: 'relative',
-    paddingLeft: '25px',
-    height: "25px",
+    paddingLeft: '1.563rem',
+    height: '1.563rem',
     cursor: 'pointer',
     ...containerStyles
   });
@@ -52,8 +52,8 @@ const Checkbox = (props: Props) => {
     position: 'absolute',
     top: 0,
     left: 0,
-    width: "25px",
-    height: "25px",
+    width: '1.563rem',
+    height: '1.563rem',
     ':hover': {
       opacity: checked ? 1 : 0.7
     },
@@ -61,12 +61,12 @@ const Checkbox = (props: Props) => {
       content: '""',
       position: 'absolute',
       display: checked ? 'block' : 'none',
-      left: '9px',
-      top: '5px',
-      width: '5px',
-      height: '10px',
+      left: '0.5625rem',
+      top: '0.3125rem',
+      width: '0.3125rem',
+      height: '0.625rem',
       border: 'solid white',
-      borderWidth: '0 3px 3px 0',
+      borderWidth: '0 0.1875rem 0.1875rem 0',
       transform: 'rotate(45deg)'
     },
     ...styles

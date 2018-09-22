@@ -187,7 +187,6 @@ class TestComponent extends Component {
         <Tooltip
           tooltipText="This is test text"
           label="Hover over me"
-          onHover={false}
         />
       </Background>
     );
