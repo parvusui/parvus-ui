@@ -3,7 +3,8 @@ node_modules
 lib
 es
 flow-typed
-styleguide
+styleguide/build
+styleguide/index.html
 .vscode/
 package-lock.json
 yarn.lock
