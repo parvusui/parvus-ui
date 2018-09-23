@@ -18,6 +18,8 @@ import {
   Label,
   Menu,
   MenuItem,
+  MenuDropdownItem,
+  MenuDropdownSubItem,
   Modal,
   ModalOverlay,
   Radio,
@@ -123,6 +125,11 @@ class TestComponent extends Component {
           <MenuItem>
             Second
           </MenuItem>
+          <MenuDropdownItem label="Hover">
+            <MenuDropdownSubItem href="#">First item</MenuDropdownSubItem>
+            <MenuDropdownSubItem href="#">Second item</MenuDropdownSubItem>
+            <MenuDropdownSubItem href="#">Third item</MenuDropdownSubItem>
+          </MenuDropdownItem>
         </Menu>
 
         <h1>Modal</h1>

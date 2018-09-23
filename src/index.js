@@ -12,7 +12,7 @@ import { Card, CardHeader, CardContent, CardFooter } from "./card";
 import { Checkbox } from "./checkbox";
 import { Input } from "./input";
 import { Label } from "./label";
-import { Menu, MenuItem } from './menu';
+import { Menu, MenuItem, MenuDropdownItem, MenuDropdownSubItem } from './menu';
 import { Modal, ModalOverlay } from "./modal";
 import { Radio } from "./radio";
 import { Select, Option } from "./select";
@@ -38,6 +38,8 @@ export {
   Label,
   Menu,
   MenuItem,
+  MenuDropdownItem,
+  MenuDropdownSubItem,
   Modal,
   ModalOverlay,
   Radio,
@@ -66,6 +68,8 @@ export default {
   Label,
   Menu,
   MenuItem,
+  MenuDropdownItem,
+  MenuDropdownSubItem,
   Modal,
   ModalOverlay,
   Radio,
