@@ -194,6 +194,7 @@ class TestComponent extends Component {
         <Tooltip
           tooltipText="This is test text"
           label="Hover over me"
+          textPosition="right"
         />
       </Background>
     );
