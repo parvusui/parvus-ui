@@ -19,31 +19,75 @@ const getPositionStyles = (position: string) => {
   if (position === 'top') {
     return {
       width: '7.5rem',
-      bottom: '100%',
+      bottom: '190%',
       left: '50%', 
-      marginLeft: '-3.75rem'
+      marginLeft: '-3.75rem',
+      ':before': {
+        content: '""',
+        position: 'absolute',
+        bottom: '-1.6rem',
+        right: '40%',
+        width: 0,
+        height: 0,
+        borderLeft: '0.8125rem solid transparent',
+        borderTop: '1.625rem solid #000000',
+        borderRight: '0.8125rem solid transparent'
+      }
     }
   }
 
   if (position === 'left') {
     return {
       top: '-0.3125rem',
-      right: '105%'
+      right: '125%',
+      ':before': {
+        content: '""',
+        position: 'absolute',
+        left: '100%',
+        top: '1rem',
+        width: 0,
+        height: 0,
+        borderTop: '0.8125rem solid transparent',
+        borderLeft: '1.625rem solid #000000',
+        borderBottom: '0.8125rem solid transparent'
+      }
     }
   }
 
   if (position === 'bottom') {
     return {
       width: '7.5rem',
-      top: '100%',
+      top: '190%',
       left: '50%', 
-      marginLeft: '-3.75rem'
+      marginLeft: '-3.75rem',
+      ':before': {
+        content: '""',
+        position: 'absolute',
+        top: '-1.6rem',
+        right: '40%',
+        width: 0,
+        height: 0,
+        borderLeft: '0.8125rem solid transparent',
+        borderBottom: '1.625rem solid #000000',
+        borderRight: '0.8125rem solid transparent'
+      }
     }
   }
 
   return {
-    top: '-0.3125rem',
-    left: '105%' 
+    top: '-1rem',
+    left: '125%',
+    ':before': {
+      content: '""',
+      position: 'absolute',
+      right: '100%',
+      top: '1rem',
+      width: 0,
+      height: 0,
+      borderTop: '0.8125rem solid transparent',
+      borderRight: '1.625rem solid #000000',
+      borderBottom: '0.8125rem solid transparent'
+    }
   }
 }
 
