@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     baseBackground: "#fdfdfc",
     linkHover: "#90a7bf",
-    header: "linear-gradient(180deg, #00868b 0%, #5f9ea0 35%)",
-    sidebar: "linear-gradient(180deg, #5f9ea0 0%, #F0FFFF 35%)",
+    header: "linear-gradient(180deg, #00868b, #5f9ea0)",
+    sidebar: "linear-gradient(180deg, #5f9ea0, #F0FFFF)",
     border: "#e0d2de",
     font: ["Helvetica", "sans-serif"]
   },
