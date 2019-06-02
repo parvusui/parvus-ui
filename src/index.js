@@ -1,18 +1,20 @@
-import {
-  themeContext,
-  ThemeProvider,
-  withTheme
-} from "./theme";
+import { themeContext, ThemeProvider, withTheme } from "./theme";
 import { A } from "./a";
 import { Alert } from "./alert";
 import { Background } from "./background";
-import { Breadcrumb, BreadcrumbItem } from './breadcrumb'
+import { Breadcrumb, BreadcrumbItem } from "./breadcrumb";
 import { Button } from "./button";
 import { Card, CardHeader, CardContent, CardFooter } from "./card";
 import { Checkbox } from "./checkbox";
 import { Input } from "./input";
 import { Label } from "./label";
-import { Menu, MenuItem, MenuDropdownItem, MenuDropdownSubItem } from './menu';
+import {
+  Menu,
+  MenuItem,
+  MenuItemButton,
+  MenuDropdownItem,
+  MenuDropdownSubItem
+} from "./menu";
 import { Modal, ModalOverlay } from "./modal";
 import { Radio } from "./radio";
 import { Select, Option } from "./select";
@@ -38,6 +40,7 @@ export {
   Label,
   Menu,
   MenuItem,
+  MenuItemButton,
   MenuDropdownItem,
   MenuDropdownSubItem,
   Modal,
