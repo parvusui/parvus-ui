@@ -1,4 +1,4 @@
-MenuItem:
+MenuItemButton:
 
 ```
 <MenuItemButton>Button</MenuItemButton>
