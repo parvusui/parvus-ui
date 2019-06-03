@@ -1,8 +1,8 @@
 /* @flow */
-import React, { type Node } from 'react';
-import { withTheme } from '../theme';
-import cxs from 'cxs';
-import { isDarkColor } from '../utils/helpers';
+import React, { type Node } from "react";
+import { withTheme } from "../theme";
+import cxs from "cxs";
+import { isDarkColor } from "../utils/helpers";
 
 type Props = {
   children: string | Node,
@@ -17,35 +17,35 @@ const Alert = (props: Props) => {
   const { className, children, styles, theme, type, ...otherProps } = props;
 
   const _styles = cxs({
-    backgroundColor: theme ? theme[type + 'Color'] : '#000000',
-    border: '0.0625rem solid transparent',
+    backgroundColor: theme ? theme[type + "Color"] : "#000000",
+    border: "0.0625rem solid transparent",
     borderRadius: theme ? theme.borderRadius : 0,
     color: theme
-      ? isDarkColor(theme[type + 'Color'])
-        ? '#ffffff'
-        : '#000000'
-      : '#ffffff',
+      ? isDarkColor(theme[type + "Color"])
+        ? "#ffffff"
+        : "#000000"
+      : "#ffffff",
     fontFamily: theme
       ? theme.fontFamily
-      : 'Helvetica Neue, Helvetica, Arial, sans-serif',
-    fontSize: '1.25rem',
+      : "Helvetica Neue, Helvetica, Arial, sans-serif",
+    fontSize: "1.25rem",
     fontWeight: 400,
-    lineHeight: '1.5',
-    padding: '.75rem 1.25rem;',
-    textAlign: 'left',
-    width: 'auto',
+    lineHeight: "1.5",
+    padding: ".75rem 1.25rem;",
+    textAlign: "left",
+    width: "auto",
     ...styles
   });
 
   return (
-    <div className={`${_styles} '${className || ''}`} {...otherProps}>
+    <div className={`${_styles} ${className || ""}`} {...otherProps}>
       {children}
     </div>
   );
 };
 
 Alert.defaultProps = {
-  type: 'primary'
+  type: "primary"
 };
 
 export default withTheme(Alert);

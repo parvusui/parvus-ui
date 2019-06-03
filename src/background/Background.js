@@ -1,6 +1,6 @@
 /* @flow */
-import React, { type Node } from 'react';
-import { withTheme } from '../theme';
+import React, { type Node } from "react";
+import { withTheme } from "../theme";
 import cxs from "cxs";
 
 type Props = {
@@ -14,7 +14,15 @@ type Props = {
 };
 
 const Background = (props: Props) => {
-  const { bgClassName, className, children, bgStyles, styles, theme, ...otherProps } = props;
+  const {
+    bgClassName,
+    className,
+    children,
+    bgStyles,
+    styles,
+    theme,
+    ...otherProps
+  } = props;
 
   const _bgStyles = cxs({
     position: "absolute",
@@ -34,14 +42,14 @@ const Background = (props: Props) => {
       ? theme.fontFamily
       : "Helvetica Neue, Helvetica, Arial, sans-serif",
     color: theme ? theme.color : "#000000",
-    fontSize: '1.25rem',
+    fontSize: "1.25rem",
     ...styles
   });
 
   return (
     <div>
-      <div className={`${_bgStyles} ${bgClassName || ''}`} />
-      <div className={`${_styles} '${className || ''}`} {...otherProps}>
+      <div className={`${_bgStyles} ${bgClassName || ""}`} />
+      <div className={`${_styles} ${className || ""}`} {...otherProps}>
         {children}
       </div>
     </div>

@@ -1,5 +1,5 @@
 /* @flow */
-import React from 'react';
+import React from "react";
 import { withTheme } from "../theme";
 import cxs from "cxs";
 
@@ -20,13 +20,13 @@ const Textarea = (props: Props) => {
     fontFamily: theme
       ? theme.fontFamily
       : "Helvetica Neue, Helvetica, Arial, sans-serif",
-    fontSize: '1.25rem',
+    fontSize: "1.25rem",
     ...styles
   });
 
   return (
     <textarea
-      className={`${_styles} '${className || ''}`}
+      className={`${_styles} ${className || ""}`}
       onChange={onChange}
       value={value}
       {...otherProps}

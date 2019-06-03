@@ -43,7 +43,7 @@ const MenuItem = (props: Props) => {
   });
 
   return (
-    <button className={`${_styles} '${className || ""}`} {...otherProps}>
+    <button className={`${_styles} ${className || ""}`} {...otherProps}>
       {children}
     </button>
   );

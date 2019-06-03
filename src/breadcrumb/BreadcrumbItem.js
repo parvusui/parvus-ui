@@ -1,8 +1,8 @@
 /* @flow */
-import React, { type Node } from 'react';
+import React, { type Node } from "react";
 import cxs from "cxs";
-import { withTheme } from '../theme';
-import { isDarkColor } from '../utils/helpers';
+import { withTheme } from "../theme";
+import { isDarkColor } from "../utils/helpers";
 
 type Props = {
   children: string | Node,
@@ -16,18 +16,18 @@ const BreadcrumbItem = (props: Props) => {
   const { className, children, styles, theme, ...otherProps } = props;
 
   const _styles = cxs({
-    display: 'inline',
-    ':before': {
-      padding: '.5rem',
+    display: "inline",
+    ":before": {
+      padding: ".5rem",
       color: theme
-      ? isDarkColor(theme.backgroundColor)
-        ? '#ffffff'
-        : '#000000'
-      : '#000000',
+        ? isDarkColor(theme.backgroundColor)
+          ? "#ffffff"
+          : "#000000"
+        : "#000000",
       content: '"/"'
     },
-    ':nth-child(1)': {
-      ':before': {
+    ":nth-child(1)": {
+      ":before": {
         content: '""'
       }
     },
@@ -35,7 +35,7 @@ const BreadcrumbItem = (props: Props) => {
   });
 
   return (
-    <li className={`${_styles} '${className || ''}`} {...otherProps}>
+    <li className={`${_styles} ${className || ""}`} {...otherProps}>
       {children}
     </li>
   );

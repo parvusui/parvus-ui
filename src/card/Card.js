@@ -1,6 +1,6 @@
 /* @flow */
-import React, { type Node } from 'react';
-import { withTheme } from '../theme';
+import React, { type Node } from "react";
+import { withTheme } from "../theme";
 import cxs from "cxs";
 
 type Props = {
@@ -16,14 +16,14 @@ const Card = (props: Props) => {
 
   const _styles = cxs({
     borderRadius: theme ? theme.borderRadius : 0,
-    fontSize: '1.25rem',
+    fontSize: "1.25rem",
     width: "100%",
     border: "0.0625rem solid #dcdcdc",
     ...styles
   });
 
   return (
-    <div className={`${_styles} '${className || ''}`} {...otherProps}>
+    <div className={`${_styles} ${className || ""}`} {...otherProps}>
       {children}
     </div>
   );

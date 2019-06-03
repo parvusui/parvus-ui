@@ -1,6 +1,6 @@
 /* @flow */
-import React from 'react';
-import { withTheme } from '../theme';
+import React from "react";
+import { withTheme } from "../theme";
 import cxs from "cxs";
 
 type Props = {
@@ -14,20 +14,28 @@ type Props = {
 };
 
 const Input = (props: Props) => {
-  const { className, styles, type, theme, value, onChange, ...otherProps } = props;
+  const {
+    className,
+    styles,
+    type,
+    theme,
+    value,
+    onChange,
+    ...otherProps
+  } = props;
 
   const _styles = cxs({
     borderRadius: theme ? theme.borderRadius : 0,
     fontFamily: theme
       ? theme.fontFamily
       : "Helvetica Neue, Helvetica, Arial, sans-serif",
-    fontSize: '1.25rem',
+    fontSize: "1.25rem",
     ...styles
   });
 
   return (
     <input
-      className={`${_styles} '${className || ''}`}
+      className={`${_styles} ${className || ""}`}
       onChange={onChange}
       value={value}
       type={type}

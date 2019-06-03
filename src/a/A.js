@@ -1,5 +1,5 @@
 /* @flow */
-import React, { type Node } from 'react';
+import React, { type Node } from "react";
 import cxs from "cxs";
 
 type Props = {
@@ -15,8 +15,8 @@ const A = (props: Props) => {
   const _styles = cxs({
     backgroundColor: "transparent",
     color: "#0275d8",
-    cursor: 'pointer',
-    fontSize: '1.25rem',
+    cursor: "pointer",
+    fontSize: "1.25rem",
     fontWeight: 400,
     textDecoration: "none",
     ":hover": {
@@ -29,7 +29,7 @@ const A = (props: Props) => {
   });
 
   return (
-    <a className={`${_styles} '${className || ''}`} {...otherProps}>
+    <a className={`${_styles} ${className || ""}`} {...otherProps}>
       {children}
     </a>
   );
