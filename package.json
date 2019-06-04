@@ -1,6 +1,6 @@
 {
   "name": "parvus-ui",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description":
     "A micro UI kit with all the main UI components in less than 5KB",
   "repository": "github:rnglnd/parvus-ui",
