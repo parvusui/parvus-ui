@@ -1,6 +1,6 @@
 /* @flow */
-import React, { type Node } from "react";
-import cxs from "cxs";
+import React, { type Node } from 'react';
+import cxs from 'cxs';
 
 type Props = {
   children: string | Node,
@@ -15,12 +15,12 @@ const Breadcrumb = (props: Props) => {
   const _styles = cxs({
     padding: 0,
     margin: 0,
-    listStyle: "none",
+    listStyle: 'none',
     ...styles
   });
 
   return (
-    <ul className={`${_styles} ${className || ""}`} {...otherProps}>
+    <ul className={`${_styles} ${className || ''}`} {...otherProps}>
       {children}
     </ul>
   );

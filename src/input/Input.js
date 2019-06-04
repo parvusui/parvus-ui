@@ -1,7 +1,7 @@
 /* @flow */
-import React from "react";
-import { withTheme } from "../theme";
-import cxs from "cxs";
+import React from 'react';
+import { withTheme } from '../theme';
+import cxs from 'cxs';
 
 type Props = {
   className?: string,
@@ -28,14 +28,14 @@ const Input = (props: Props) => {
     borderRadius: theme ? theme.borderRadius : 0,
     fontFamily: theme
       ? theme.fontFamily
-      : "Helvetica Neue, Helvetica, Arial, sans-serif",
-    fontSize: "1.25rem",
+      : 'Helvetica Neue, Helvetica, Arial, sans-serif',
+    fontSize: '1.25rem',
     ...styles
   });
 
   return (
     <input
-      className={`${_styles} ${className || ""}`}
+      className={`${_styles} ${className || ''}`}
       onChange={onChange}
       value={value}
       type={type}
@@ -45,7 +45,7 @@ const Input = (props: Props) => {
 };
 
 Input.defaultProps = {
-  type: "text"
+  type: 'text'
 };
 
 export default withTheme(Input);

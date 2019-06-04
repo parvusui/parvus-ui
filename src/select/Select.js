@@ -1,7 +1,7 @@
 /* @flow */
-import React, { type Node } from "react";
-import { withTheme } from "../theme";
-import cxs from "cxs";
+import React, { type Node } from 'react';
+import { withTheme } from '../theme';
+import cxs from 'cxs';
 
 type Props = {
   children: string | Node,
@@ -25,27 +25,27 @@ const Select = (props: Props) => {
   } = props;
 
   const _outerStyles = cxs({
-    border: "0.0625rem solid #dcdcdc",
+    border: '0.0625rem solid #dcdcdc',
     borderRadius: theme ? theme.borderRadius : 0,
-    display: "inline-block",
-    padding: ".25rem",
-    minWidth: "5rem",
+    display: 'inline-block',
+    padding: '.25rem',
+    minWidth: '5rem',
     ...outerStyles
   });
 
   const _styles = cxs({
-    backgroundColor: theme ? theme.backgroundColor : "#ffffff",
+    backgroundColor: theme ? theme.backgroundColor : '#ffffff',
     border: 0,
     fontFamily: theme
       ? theme.fontFamily
-      : "Helvetica Neue, Helvetica, Arial, sans-serif",
-    fontSize: "1.25rem",
+      : 'Helvetica Neue, Helvetica, Arial, sans-serif',
+    fontSize: '1.25rem',
     ...styles
   });
 
   return (
-    <div className={`${_outerStyles} ${outerClassName || ""}`}>
-      <select className={`${_styles} ${className || ""}`} {...otherProps}>
+    <div className={`${_outerStyles} ${outerClassName || ''}`}>
+      <select className={`${_styles} ${className || ''}`} {...otherProps}>
         {children}
       </select>
     </div>
