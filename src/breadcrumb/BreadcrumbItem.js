@@ -1,6 +1,6 @@
 /* @flow */
 import React, { type Node } from 'react';
-import cxs from "cxs";
+import cxs from 'cxs';
 import { withTheme } from '../theme';
 import { isDarkColor } from '../utils/helpers';
 
@@ -20,10 +20,10 @@ const BreadcrumbItem = (props: Props) => {
     ':before': {
       padding: '.5rem',
       color: theme
-      ? isDarkColor(theme.backgroundColor)
-        ? '#ffffff'
-        : '#000000'
-      : '#000000',
+        ? isDarkColor(theme.backgroundColor)
+          ? '#ffffff'
+          : '#000000'
+        : '#000000',
       content: '"/"'
     },
     ':nth-child(1)': {
@@ -35,7 +35,7 @@ const BreadcrumbItem = (props: Props) => {
   });
 
   return (
-    <li className={`${_styles} '${className || ''}`} {...otherProps}>
+    <li className={`${_styles} ${className || ''}`} {...otherProps}>
       {children}
     </li>
   );

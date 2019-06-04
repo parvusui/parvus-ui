@@ -1,6 +1,6 @@
 /* @flow */
 import React, { type Node } from 'react';
-import cxs from "cxs";
+import cxs from 'cxs';
 
 type Props = {
   children: string | Node,
@@ -18,7 +18,7 @@ const Option = (props: Props) => {
   });
 
   return (
-    <option className={`${_styles} '${className || ''}`} {...otherProps}>
+    <option className={`${_styles} ${className || ''}`} {...otherProps}>
       {children}
     </option>
   );

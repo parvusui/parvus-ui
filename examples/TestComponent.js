@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import cxs from "cxs";
+import React, { Component } from 'react';
+import cxs from 'cxs';
 import {
   withTheme,
   A,
@@ -27,14 +27,14 @@ import {
   Option,
   Textarea,
   Tooltip
-} from "../src";
+} from '../src';
 
 class TestComponent extends Component {
   state = {
     checkboxChecked: true,
-    inputText: "Hello",
+    inputText: 'Hello',
     modalOpen: false,
-    textareaText: "Hello"
+    textareaText: 'Hello'
   };
 
   render() {
@@ -66,7 +66,7 @@ class TestComponent extends Component {
           </BreadcrumbItem>
         </Breadcrumb>
         <h1>Button</h1>
-        <div className={cxs({ display: "flex", justifyContent: "flex-start" })}>
+        <div className={cxs({ display: 'flex', justifyContent: 'flex-start' })}>
           <Button type="primary">Primary</Button>
           <Button type="secondary">Secondary</Button>
           <Button type="tertiary">Tertiary</Button>
@@ -76,7 +76,7 @@ class TestComponent extends Component {
         </div>
 
         <h1>Card</h1>
-        <Card styles={{ width: "400px" }}>
+        <Card styles={{ width: '400px' }}>
           <CardHeader>Header</CardHeader>
           <CardContent>Content</CardContent>
           <CardFooter>Footer</CardFooter>
@@ -127,12 +127,12 @@ class TestComponent extends Component {
         </Button>
         <ModalOverlay isOpen={modalOpen}>
           <Modal isOpen={modalOpen}>
-            <Card styles={{ backgroundColor: "#ffffff", width: "400px" }}>
+            <Card styles={{ backgroundColor: '#ffffff', width: '400px' }}>
               <CardHeader>
                 <span
                   className={cxs({
-                    display: "flex",
-                    justifyContent: "space-between"
+                    display: 'flex',
+                    justifyContent: 'space-between'
                   })}
                 >
                   <span>Header</span>

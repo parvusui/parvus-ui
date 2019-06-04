@@ -1,4 +1,4 @@
-import memoize from "./memoize";
+import memoize from './memoize';
 
 const hexToRgb = hex =>
   hex
@@ -17,9 +17,9 @@ const checkWithYIQ = rgbList => {
 };
 
 export const isDarkColor = memoize(enteredColor => {
-  if (enteredColor.includes("#")) {
+  if (enteredColor.includes('#')) {
     return checkWithYIQ(hexToRgb(enteredColor));
   }
 
-  return checkWithYIQ(enteredColor.replace(/[^\d,]/g, "").split(","));
+  return checkWithYIQ(enteredColor.replace(/[^\d,]/g, '').split(','));
 });

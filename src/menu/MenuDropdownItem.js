@@ -16,7 +16,16 @@ type Props = {
 };
 
 const MenuDropdownItem = (props: Props) => {
-  const { className, children, styles, label, listStyles, theme, type, ...otherProps } = props;
+  const {
+    className,
+    children,
+    styles,
+    label,
+    listStyles,
+    theme,
+    type,
+    ...otherProps
+  } = props;
 
   const _styles = cxs({
     backgroundColor: theme ? theme[type + 'Color'] : '#000000',
@@ -59,11 +68,9 @@ const MenuDropdownItem = (props: Props) => {
   });
 
   return (
-    <div className={`${_styles} '${className || ''}`} {...otherProps}>
+    <div className={`${_styles} ${className || ''}`} {...otherProps}>
       <label>{label}</label>
-      <div className={`${_listStyles} '${className || ''}`}>
-      {children}
-      </div>
+      <div className={`${_listStyles} ${className || ''}`}>{children}</div>
     </div>
   );
 };

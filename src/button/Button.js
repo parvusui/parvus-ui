@@ -15,7 +15,15 @@ type Props = {
 };
 
 const Button = (props: Props) => {
-  const { className, children, htmlType, styles, theme, type, ...otherProps } = props;
+  const {
+    className,
+    children,
+    htmlType,
+    styles,
+    theme,
+    type,
+    ...otherProps
+  } = props;
 
   const _styles = cxs({
     backgroundColor: theme ? theme[type + 'Color'] : '#000000',
@@ -44,7 +52,11 @@ const Button = (props: Props) => {
   });
 
   return (
-    <button className={`${_styles} '${className || ''}`} type={htmlType} {...otherProps}>
+    <button
+      className={`${_styles} ${className || ''}`}
+      type={htmlType}
+      {...otherProps}
+    >
       {children}
     </button>
   );

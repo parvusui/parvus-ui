@@ -38,9 +38,9 @@ const Menu = (props: Props) => {
   });
 
   return (
-    <div className={`${_styles} '${className || ''}`} {...otherProps}>
+    <nav className={`${_styles} ${className || ''}`} {...otherProps}>
       {children}
-    </div>
+    </nav>
   );
 };
 

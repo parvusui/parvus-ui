@@ -1,6 +1,6 @@
 /* @flow */
 import React, { type Node } from 'react';
-import cxs from "cxs";
+import cxs from 'cxs';
 
 type Props = {
   children: string | Node,
@@ -23,7 +23,7 @@ const Modal = (props: Props) => {
   });
 
   return (
-    <div className={`${_styles} '${className || ''}`} {...otherProps}>
+    <div className={`${_styles} ${className || ''}`} {...otherProps}>
       {children}
     </div>
   );

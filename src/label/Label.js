@@ -1,7 +1,7 @@
 /* @flow */
 import React, { type Node } from 'react';
 import { withTheme } from '../theme';
-import cxs from "cxs";
+import cxs from 'cxs';
 
 type Props = {
   children: string | Node,
@@ -21,7 +21,7 @@ const Label = (props: Props) => {
 
   return (
     <label
-      className={`${_styles} '${className || ''}`}
+      className={`${_styles} ${className || ''}`}
       htmlFor={htmlFor}
       {...otherProps}
     >

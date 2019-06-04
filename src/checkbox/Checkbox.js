@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { withTheme } from '../theme';
-import cxs from "cxs";
+import cxs from 'cxs';
 
 type Props = {
   checked: boolean,
@@ -73,7 +73,10 @@ const Checkbox = (props: Props) => {
   });
 
   return (
-    <label className={`${_containerStyles} ${containerClassName || ''}`} aria-hidden>
+    <label
+      className={`${_containerStyles} ${containerClassName || ''}`}
+      aria-hidden
+    >
       <input
         className={`${_inputStyles} ${inputClassName || ''}`}
         type="checkbox"
@@ -81,7 +84,7 @@ const Checkbox = (props: Props) => {
         checked={checked}
         {...otherProps}
       />
-      <span className={`${_styles} '${className || ''}`}></span>
+      <span className={`${_styles} ${className || ''}`} />
     </label>
   );
 };

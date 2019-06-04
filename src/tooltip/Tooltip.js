@@ -1,7 +1,7 @@
 /* @flow */
 import React, { type Node } from 'react';
 import { withTheme } from '../theme';
-import cxs from "cxs";
+import cxs from 'cxs';
 
 type Props = {
   className?: string,
@@ -20,7 +20,7 @@ const getPositionStyles = (position: string) => {
     return {
       width: '7.5rem',
       bottom: '190%',
-      left: '50%', 
+      left: '50%',
       marginLeft: '-3.75rem',
       ':before': {
         content: '""',
@@ -33,7 +33,7 @@ const getPositionStyles = (position: string) => {
         borderTop: '1.625rem solid #000000',
         borderRight: '0.8125rem solid transparent'
       }
-    }
+    };
   }
 
   if (position === 'left') {
@@ -51,14 +51,14 @@ const getPositionStyles = (position: string) => {
         borderLeft: '1.625rem solid #000000',
         borderBottom: '0.8125rem solid transparent'
       }
-    }
+    };
   }
 
   if (position === 'bottom') {
     return {
       width: '7.5rem',
       top: '190%',
-      left: '50%', 
+      left: '50%',
       marginLeft: '-3.75rem',
       ':before': {
         content: '""',
@@ -71,7 +71,7 @@ const getPositionStyles = (position: string) => {
         borderBottom: '1.625rem solid #000000',
         borderRight: '0.8125rem solid transparent'
       }
-    }
+    };
   }
 
   return {
@@ -88,8 +88,8 @@ const getPositionStyles = (position: string) => {
       borderRight: '1.625rem solid #000000',
       borderBottom: '0.8125rem solid transparent'
     }
-  }
-}
+  };
+};
 
 const Tooltip = (props: Props) => {
   const {
@@ -122,20 +122,23 @@ const Tooltip = (props: Props) => {
     position: 'relative',
     display: 'inline-block',
     ':hover span': {
-      display: 'inline',
+      display: 'inline'
     },
     ...styles
   });
 
   return (
-    <div className={`${_styles} '${className || ''}`} {...otherProps}>{label}
-      <span className={`${_textStyles} ${textClassName || ''}`}>{tooltipText}</span>
+    <div className={`${_styles} ${className || ''}`} {...otherProps}>
+      {label}
+      <span className={`${_textStyles} ${textClassName || ''}`}>
+        {tooltipText}
+      </span>
     </div>
   );
 };
 
 Tooltip.defaultProps = {
   position: 'right'
-}
+};
 
 export default withTheme(Tooltip);
