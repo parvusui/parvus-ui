@@ -1,5 +1,0 @@
-MenuItemButton:
-
-```
-<MenuItemButton>Button</MenuItemButton>
-```

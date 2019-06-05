@@ -31,7 +31,6 @@ const MenuDropdownSubItem = (props: Props) => {
     padding: '.75rem .75rem',
     textAlign: 'left',
     display: 'block',
-    textDecoration: 'none',
     zIndex: 2,
     ':disabled': {
       opacity: 0.3
@@ -46,9 +45,9 @@ const MenuDropdownSubItem = (props: Props) => {
   });
 
   return (
-    <a className={`${_styles} ${className || ''}`} {...otherProps}>
+    <span className={`${_styles} ${className || ''}`} {...otherProps}>
       {children}
-    </a>
+    </span>
   );
 };
 
