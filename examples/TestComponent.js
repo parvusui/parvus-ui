@@ -17,7 +17,6 @@ import {
   Label,
   Menu,
   MenuItem,
-  MenuItemButton,
   MenuDropdownItem,
   MenuDropdownSubItem,
   Modal,
@@ -110,7 +109,6 @@ class TestComponent extends Component {
         <Menu>
           <MenuItem href="#">First</MenuItem>
           <MenuItem href="#">Second</MenuItem>
-          <MenuItemButton href="#">Third</MenuItemButton>
           <MenuDropdownItem label="Hover">
             <MenuDropdownSubItem href="#">First item</MenuDropdownSubItem>
             <MenuDropdownSubItem href="#">Second item</MenuDropdownSubItem>

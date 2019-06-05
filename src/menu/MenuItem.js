@@ -30,7 +30,6 @@ const MenuItem = (props: Props) => {
     minWidth: '6rem',
     padding: '.75rem .75rem',
     textAlign: 'center',
-    textDecoration: 'none',
     ':disabled': {
       opacity: 0.3
     },
@@ -44,9 +43,9 @@ const MenuItem = (props: Props) => {
   });
 
   return (
-    <a className={`${_styles} ${className || ''}`} {...otherProps}>
+    <span className={`${_styles} ${className || ''}`} {...otherProps}>
       {children}
-    </a>
+    </span>
   );
 };
 
