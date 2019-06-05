@@ -30,6 +30,25 @@ const MenuItem = (props: Props) => {
     minWidth: '6rem',
     padding: '.75rem .75rem',
     textAlign: 'center',
+    '> a': {
+      textDecoration: 'none',
+      color: theme
+        ? isDarkColor(theme[type + 'Color'])
+          ? '#ffffff'
+          : '#000000'
+        : '#ffffff'
+    },
+    '> button': {
+      background: 'transparent',
+      border: 0,
+      fontSize: '1.25rem',
+      fontWeight: 400,
+      color: theme
+        ? isDarkColor(theme[type + 'Color'])
+          ? '#ffffff'
+          : '#000000'
+        : '#ffffff'
+    },
     ':disabled': {
       opacity: 0.3
     },

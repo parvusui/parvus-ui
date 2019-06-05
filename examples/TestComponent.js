@@ -107,8 +107,12 @@ class TestComponent extends Component {
 
         <h1>Menu</h1>
         <Menu>
-          <MenuItem href="#">First</MenuItem>
-          <MenuItem href="#">Second</MenuItem>
+          <MenuItem href="#">
+            <a href="#">First</a>
+          </MenuItem>
+          <MenuItem href="#">
+            <button>Second</button>
+          </MenuItem>
           <MenuDropdownItem label="Hover">
             <MenuDropdownSubItem href="#">First item</MenuDropdownSubItem>
             <MenuDropdownSubItem href="#">Second item</MenuDropdownSubItem>
